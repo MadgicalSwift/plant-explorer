@@ -1,0 +1,224 @@
+{
+  "Flowering Plants 🌸": {
+    "plants": [
+      {
+        "plant_name": "Orchid",
+        "image_url": "https://images.unsplash.com/photo-1534885320675-b08aa131cc5e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b3JjaGlkfGVufDB8fDB8fHww"
+      },
+      {
+        "plant_name": "Daisy",
+        "image_url": "https://i.pinimg.com/736x/ca/47/bb/ca47bb1b9a6226d2e5b5bd91f400fcc6.jpg"
+      }
+    ],
+    "quiz_sets": [
+      {
+        "set_name": "Quiz Set 1",
+        "questions": [
+          {
+            "question": "What is the primary habitat of orchids?",
+            "options": ["Rainforests", "Deserts", "Mountains", "Grasslands"],
+            "answer": "Rainforests"
+          },
+          {
+            "question": "Which part of the daisy is typically bright yellow?",
+            "options": ["Petals", "Leaves", "Stem", "Center"],
+            "answer": "Center"
+          },
+          {
+            "question": "Which family do daisies belong to?",
+            "options": ["Asteraceae", "Rosaceae", "Orchidaceae", "Fabaceae"],
+            "answer": "Asteraceae"
+          },
+          {
+            "question": "Orchids are known to grow on which type of structure?",
+            "options": ["Soil", "Rocks", "Other plants", "Water"],
+            "answer": "Other plants"
+          },
+          {
+            "question": "What color are the petals of a typical daisy flower?",
+            "options": ["Blue", "Yellow", "White", "Purple"],
+            "answer": "White"
+          },
+          {
+            "question": "Which of these is a unique characteristic of orchids?",
+            "options": [
+              "Symmetrical petals",
+              "Multiple colors in one flower",
+              "Thorns",
+              "Edible petals"
+            ],
+            "answer": "Symmetrical petals"
+          },
+          {
+            "question": "Daisies are often used in which traditional activity?",
+            "options": [
+              "Flower crowns",
+              "Cooking spices",
+              "Medical herbs",
+              "Perfumes"
+            ],
+            "answer": "Flower crowns"
+          },
+          {
+            "question": "The orchid family is one of the ____ plant families in the world.",
+            "options": ["Largest", "Smallest", "Most endangered", "Oldest"],
+            "answer": "Largest"
+          },
+          {
+            "question": "Daisies are commonly associated with which symbolic meaning?",
+            "options": ["Hope", "Innocence", "Strength", "Love"],
+            "answer": "Innocence"
+          },
+          {
+            "question": "Orchids are known for their unique pollination strategy involving which of the following?",
+            "options": ["Birds", "Bats", "Insects", "Wind"],
+            "answer": "Insects"
+          }
+        ]
+      },
+      {
+        "set_name": "Quiz Set 2",
+        "questions": [
+          {
+            "question": "Orchids are known to grow on which type of structure?",
+            "options": ["Soil", "Rocks", "Other plants", "Water"],
+            "answer": "Other plants"
+          },
+          {
+            "question": "What color are the petals of a typical daisy flower?",
+            "options": ["Blue", "Yellow", "White", "Purple"],
+            "answer": "White"
+          },
+          {
+            "question": "Which of these is a unique characteristic of orchids?",
+            "options": [
+              "Symmetrical petals",
+              "Multiple colors in one flower",
+              "Thorns",
+              "Edible petals"
+            ],
+            "answer": "Symmetrical petals"
+          },
+          {
+            "question": "How long can an orchid typically live?",
+            "options": ["1-2 years", "10-15 years", "20-30 years", "5-7 years"],
+            "answer": "10-15 years"
+          },
+          {
+            "question": "Which part of the daisy is edible?",
+            "options": ["Stem", "Flower", "Leaves", "Roots"],
+            "answer": "Flower"
+          }
+        ]
+      }
+    ]
+  },
+  "Medicinal Plants 🌿": {
+    "plants": [
+      {
+        "plant_name": "Aloe Vera",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDlcEeouAyi8XTsZtZ-McYzbdCI0uqvFGh1A&s"
+      },
+      {
+        "plant_name": "Neem",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aHt_lwAYZS6CVzk66U04_sVJRW3Z4ZJfQg&s"
+      }
+    ]
+  },
+  "Trees 🌳": {
+    "plants": [
+      {
+        "plant_name": "Oak",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXpdfWV0mk39eFDebdwfl7IEHHdVwPRHaUQw&s"
+      },
+      {
+        "plant_name": "Maple",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh3ibNCDoRflgxyKv-NNZrhhkw1sTxW9MjOw&s"
+      }
+    ]
+  },
+  "Fruits 🍎": {
+    "plants": [
+      {
+        "plant_name": "Apple Tree",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTUmeMf3WBe3alWzcxjdAuEK76poqv0keojA&s"
+      },
+      {
+        "plant_name": "Banana Plant",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTeymjJupThvEZyv06NNk7feEhMgeQt_pm9Q&s"
+      }
+    ]
+  },
+  "Vegetables 🥕": {
+    "plants": [
+      {
+        "plant_name": "Carrot",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgux9-De7c9ISPoWhpJzx51Gxr_FVFKceTug&s"
+      },
+      {
+        "plant_name": "Tomato",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLgQv3oUGyjK8cwS6mdOToqGg6-hGFPT7uDA&s"
+      }
+    ]
+  },
+  "Herbs 🌾": {
+    "plants": [
+      {
+        "plant_name": "Basil",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrPS1s_538VquSEg9HuoDLQuYFpel4wL8i8Q&s"
+      },
+      {
+        "plant_name": "Mint",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvDIWF37ys8XJ3OqWHfCY83L0IJ3vz2tRvpA&s"
+      }
+    ]
+  },
+  "Cacti 🌵": {
+    "plants": [
+      {
+        "plant_name": "Saguaro Cactus",
+        "image_url": "https://destinations.rei.com/wp-content/uploads/2013/11/giant-Saguaro-Cactus-Arizona-Saguaro-Cactus-blog.jpg"
+      },
+      {
+        "plant_name": "Barrel Cactus",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu8tT4XogMtRn7ZZclGvnMTxAzzeB15VYnlg&s"
+      }
+    ]
+  },
+  "Water Plants 💧": {
+    "plants": [
+      {
+        "plant_name": "Water Lily",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qlEGV5KvSbQBdwsstduxWdDvWWjosoOaJA&s"
+      },
+      {
+        "plant_name": "Lotus",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROoC3Vvht29yMqrHlUQ20jU87VTZSAAimgJw&s"
+      }
+    ]
+  },
+  "Climbers and Creepers 🌿": {
+    "plants": [
+      {
+        "plant_name": "Ivy",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRht5hoFGS1tN--3PPYgfvxYl_J_VoOyP-AtA&s"
+      },
+      {
+        "plant_name": "Jasmine",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCYACRHeBeRky6UstBAku3erFAExZunAF5Q&s"
+      }
+    ]
+  },
+  "Carnivorous Plants 🪰": {
+    "plants": [
+      {
+        "plant_name": "Venus Flytrap",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7BOPk5N9v8Arbr6B8VxBVDRDhVnz4zMHdg&s"
+      },
+      {
+        "plant_name": "Pitcher Plant",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmcaZGsFoyQfQnKwdfODH6tAvURP9hEMjHA&s"
+      }
+    ]
+  }
+}
