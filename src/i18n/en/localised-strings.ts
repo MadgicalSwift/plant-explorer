@@ -1,8 +1,7 @@
-import { categoryButton } from "../buttons/button";
-
 export const localisedStrings = {
+  validText: ['hi', 'Hi', 'HI', 'hI', 'Hello', 'hello', 'hola', 'Hii', 'hii'], 
   welcomeMessage:
-    'Welcome to Plant Explorer! 🌱 Discover amazing plants and learn why they’re so important for us and the Earth!',
+    'Welcome to Plant Explorer! 🌿 Discover fascinating plants and their vital role in our world. Let’s explore nature together!',
     categorymessage: 'Choose a category to explore:',
   category: [
     'Flowering Plants 🌸',
@@ -19,10 +18,15 @@ export const localisedStrings = {
   carousalMessage: (selectedCategory: string) => `Great choice! Here are some popular plants in the ${selectedCategory}. Click on any plant to learn more about it:`,
   afterCarousalMessage: (selectedCategory: string) => `Want to test your knowledge about ${selectedCategory}?`,
   startButton: 'Start Quiz',
-  exploreMoreButton: 'Explore More Plants',
+  exploreButton: 'Explore More Data',
   quizMessage: (selectedCategory: string) => `Let’s start the quiz! Answer these 10 questions and see how much you know about ${selectedCategory}!`,
   correctAnser:'That’s correct! 🌟',
-  incorrectAnswer: 'Oops, the correct answer was [Correct Answer].',
+  incorrectAnswer: (correctAnswer: string) =>`Oops, the correct answer was ${correctAnswer}. Keep learning!`,
+  shareMessage: (score: number) => `I scored ${score}/10 in the Plant Quiz! Try it: https://web.convegenius.ai/bots?botId=0220315447059806`,
+  afterQuizCompletionMessage: 'What would you like to do next?',
+  moreAboutButton: (selectedCategory: string) => `Learn more about ${selectedCategory}`,
+  plantCategoryButton: 'Choose a Different Plant Category',
+  retakeQuizButton: 'Retake Quiz',
   seeMoreMessage: 'See More Data',
   language_hindi: 'हिन्दी',
   language_english: 'English',

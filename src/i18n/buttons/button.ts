@@ -23,7 +23,10 @@ export function categoryButton(from: string) {
   };
 }
 
-export function tartQuizOrExploreMoreButton(from: string, selectedCategory: string) {
+export function startAndExploreButton(
+  from: string,
+  selectedCategory: string,
+) {
   return {
     to: from,
     type: 'button',
@@ -31,7 +34,7 @@ export function tartQuizOrExploreMoreButton(from: string, selectedCategory: stri
       body: {
         type: 'text',
         text: {
-          body: localisedStrings.afterCarousalMessage(selectedCategory)
+          body: localisedStrings.afterCarousalMessage(selectedCategory),
         },
       },
       buttons: [
@@ -42,9 +45,9 @@ export function tartQuizOrExploreMoreButton(from: string, selectedCategory: stri
         },
         {
           type: 'solid',
-          body: localisedStrings.exploreMoreButton,
-          reply: localisedStrings.exploreMoreButton,
-        },
+          body: localisedStrings.exploreButton,
+          reply: localisedStrings.exploreButton,
+        }
       ],
       allow_custom_response: false,
     },
@@ -104,4 +107,94 @@ export function firstQuestionWithOptionButtons(
     },
   };
   return { requestData, setName: selectedQuizSet.set_name };
+}
+
+export function nextQuestionWithOptionButtons(
+  from: string,
+  selectedCategory: string,
+  setName: string,
+  currentQuestionIndex: number,
+) {
+  const quizSets = data[selectedCategory]?.quiz_sets;
+  if (!quizSets) {
+    console.log(
+      `Category ${selectedCategory} not found or does not have quiz sets.`,
+    );
+    return;
+  }
+  // Find the quiz set that matches the setName
+  const selectedQuizSet = quizSets.find((set) => set.set_name === setName);
+  if (!selectedQuizSet) {
+    console.log(`Quiz Set ${setName} not found.`);
+    return;
+  }
+  // Ensure the current question index is within the bounds of the questions array
+  if (currentQuestionIndex >= selectedQuizSet.questions.length) {
+    console.log('No more questions available in this quiz set.');
+    return;
+  }
+
+  // Get the current question based on the provided index
+  const currentQuestion = selectedQuizSet.questions[currentQuestionIndex];
+
+  // Check if the current question has options
+  if (!currentQuestion.options || currentQuestion.options.length === 0) {
+    console.log(
+      `No options available for the question: "${currentQuestion.question}".`,
+    );
+    return;
+  }
+
+  return {
+    to: from,
+    type: 'button',
+    button: {
+      body: {
+        type: 'text',
+        text: {
+          body: currentQuestion.question, // Displaying the current question text
+        },
+      },
+      buttons: currentQuestion.options.map((option) => ({
+        type: 'solid',
+        body: option,
+        reply: option,
+      })),
+      allow_custom_response: false,
+    },
+  };
+}
+
+export function scoreWithButtons(from: string, selectedCategory: string){
+  return {
+    to: from,
+    type: 'button',
+    button: {
+      body: {
+        type: 'text',
+        text: {
+          body: localisedStrings.afterQuizCompletionMessage,
+        },
+      },
+      buttons: [
+        {
+          type: 'solid',
+          body: localisedStrings.moreAboutButton(selectedCategory),
+          reply: localisedStrings.moreAboutButton(selectedCategory),
+        },
+        {
+          type: 'solid',
+          body: localisedStrings.plantCategoryButton,
+          reply: localisedStrings.plantCategoryButton,
+        },
+        {
+          type: 'solid',
+          body: localisedStrings.retakeQuizButton,
+          reply: localisedStrings.retakeQuizButton,
+        }
+      ],
+      allow_custom_response: false,
+    },
+  };
+
 }

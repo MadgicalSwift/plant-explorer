@@ -30,9 +30,12 @@ export abstract class MessageService {
   abstract sendLanguageChangedMessage(from: string, language: string);
   abstract sendcategory(from: string)
   abstract sendCarousal(from: string, selectedCategory: string);
-  abstract sendStartQuizOrExploreMoreButton(from: string, selectedCategory: string);
+  abstract sendStartQuizandExploreButton(from: string, selectedCategory: string);
   abstract sendQuizMessage(from: string, selectedCategory: string);
   abstract sendFirstquestion(from: string, selectedCategory: string);
+  abstract sendNextQuestion(from: string, selectedCategory: string, setName: string, currentQuestionIndex: number);
   abstract checkAnswer(from: string, selectedCategory: string, setName: string, currentQuestionIndex: number, userAnswer: string);
+  abstract sendScoreCard(from: string, score: number);
+  abstract sendButtonAfterScore(from: string, selectedCategory: string);
   abstract sendCategoryMessage(from: string, selectedCategory: string);
 }

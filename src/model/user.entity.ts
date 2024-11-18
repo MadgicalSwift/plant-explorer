@@ -1,28 +1,24 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { IsString, IsNumber } from 'class-validator';
 
-@Entity()
 export class User {
-  @PrimaryGeneratedColumn()
-  id: number;
-
-  @Column({ unique: false })
+  @IsString()
   mobileNumber: string;
 
-  @Column()
+  @IsString()
   language: string;
 
-  @Column()
-  botID: string;
- 
-  @Column({ nullable: true })
-  selectedCategory: string;
+  @IsString()
+  Botid: string;
 
-  @Column({ nullable: true })
-  setName: string;
+  @IsString()
+  selectedCategory: string | null;
 
-  @Column({ default: 0 })
-  currentQuestionIndex : number;
+  @IsString()
+  setName: string | null;
 
-  @Column({ default: 0 })
-  score : number;
+  @IsNumber()
+  currentQuestionIndex: number = 0;
+
+  @IsNumber()
+  score: number = 0;
 }

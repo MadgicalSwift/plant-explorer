@@ -108,6 +108,41 @@
             "question": "Which part of the daisy is edible?",
             "options": ["Stem", "Flower", "Leaves", "Roots"],
             "answer": "Flower"
+          },
+          {
+            "question": "Which of these is a unique characteristic of orchids?",
+            "options": [
+              "Symmetrical petals",
+              "Multiple colors in one flower",
+              "Thorns",
+              "Edible petals"
+            ],
+            "answer": "Symmetrical petals"
+          },
+          {
+            "question": "Daisies are often used in which traditional activity?",
+            "options": [
+              "Flower crowns",
+              "Cooking spices",
+              "Medical herbs",
+              "Perfumes"
+            ],
+            "answer": "Flower crowns"
+          },
+          {
+            "question": "The orchid family is one of the ____ plant families in the world.",
+            "options": ["Largest", "Smallest", "Most endangered", "Oldest"],
+            "answer": "Largest"
+          },
+          {
+            "question": "Daisies are commonly associated with which symbolic meaning?",
+            "options": ["Hope", "Innocence", "Strength", "Love"],
+            "answer": "Innocence"
+          },
+          {
+            "question": "Orchids are known for their unique pollination strategy involving which of the following?",
+            "options": ["Birds", "Bats", "Insects", "Wind"],
+            "answer": "Insects"
           }
         ]
       }

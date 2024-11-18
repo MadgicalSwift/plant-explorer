@@ -3,20 +3,27 @@ import IntentClassifier from '../intent/intent.classifier';
 import { MessageService } from 'src/message/message.service';
 import { UserService } from 'src/model/user.service';
 import { localisedStrings } from 'src/i18n/en/localised-strings';
+import { MixpanelService } from 'src/mixpanel/mixpanel.service';
+
 @Injectable()
 export class ChatbotService {
   private readonly intentClassifier: IntentClassifier;
   private readonly message: MessageService;
   private readonly userService: UserService;
+  private readonly mixpanel: MixpanelService;
+
 
   constructor(
     intentClassifier: IntentClassifier,
     message: MessageService,
     userService: UserService,
+    mixpanel: MixpanelService,
   ) {
     this.intentClassifier = intentClassifier;
     this.message = message;
     this.userService = userService;
+    this.mixpanel = mixpanel;
+    
   }
 
   public async processMessage(body: any): Promise<any> {
@@ -24,25 +31,34 @@ export class ChatbotService {
     const textBody = text?.body;
     const buttonBody = button_response?.body;
     let botID = process.env.BOT_ID;
-    let userData = await this.userService.findUserByMobileNumber(from);
+    let userData = await this.userService.findUserByMobileNumber(from, botID);
     if (!userData) {
       console.log('Creating new user');
       userData = await this.userService.createUser(from, 'english', botID);
     }
 
     if (buttonBody) {
+      // Mixpanel tracking data
+      const trackingData = {
+        distinct_id: from,
+        button: buttonBody,
+        botID: botID,
+      };
+
+      this.mixpanel.track('Button_Click', trackingData);
       switch (true) {
         case localisedStrings.category.includes(buttonBody):
           userData.selectedCategory = buttonBody;
           await this.message.sendCategoryMessage(from, buttonBody);
           await this.message.sendCarousal(from, buttonBody);
-          await this.message.sendStartQuizOrExploreMoreButton(
+          await this.message.sendStartQuizandExploreButton(
             from,
             userData.selectedCategory,
           );
           break;
 
-        case buttonBody === localisedStrings.startButton: // Checks if the 'Start Exploring' button was pressed
+        case buttonBody === localisedStrings.startButton: {
+          // Checks if the 'Start Exploring' button was pressed
           await this.message.sendQuizMessage(from, userData.selectedCategory);
           const setName = await this.message.sendFirstquestion(
             from,
@@ -50,10 +66,37 @@ export class ChatbotService {
           );
           userData.setName = setName;
           break;
-
-        case buttonBody === localisedStrings.exploreMoreButton: // Checks if the 'Explore More' button was pressed
+        }
+        case buttonBody === localisedStrings.exploreButton:
+          userData.currentQuestionIndex = 0;
+          userData.score = 0;
+          await this.message.sendcategory(from);
           break;
-        default:
+        case buttonBody ===
+          localisedStrings.moreAboutButton(userData.selectedCategory):
+          console.log(buttonBody);
+          await this.message.sendCarousal(from, userData.selectedCategory);
+          await this.message.sendStartQuizandExploreButton(
+            from,
+            userData.selectedCategory,
+          );
+          break;
+
+        case buttonBody === localisedStrings.plantCategoryButton:
+          console.log(buttonBody);
+          await this.message.sendcategory(from);
+          break;
+        case buttonBody === localisedStrings.retakeQuizButton:
+          console.log(buttonBody);
+          await this.message.sendNextQuestion(
+            from,
+            userData.selectedCategory,
+            userData.setName,
+            userData.currentQuestionIndex,
+          );
+
+          break;
+        default: {
           const score = await this.message.checkAnswer(
             from,
             userData.selectedCategory,
@@ -61,11 +104,32 @@ export class ChatbotService {
             userData.currentQuestionIndex,
             buttonBody,
           );
-          userData.score = score;
+          userData.score += score;
+          userData.currentQuestionIndex += 1;
+          if (userData.currentQuestionIndex >= 10) {
+            await this.message.sendScoreCard(from, userData.score);
+            await this.message.sendButtonAfterScore(
+              from,
+              userData.selectedCategory,
+            );
+            userData.currentQuestionIndex = 0;
+            userData.score = 0;
+            break;
+          }
+
+          await this.message.sendNextQuestion(
+            from,
+            userData.selectedCategory,
+            userData.setName,
+            userData.currentQuestionIndex,
+          );
           break;
+        }
       }
-    } else {
-      console.log('text', textBody);
+    }
+    if (localisedStrings.validText.includes(textBody)) {
+      userData.currentQuestionIndex = 0;
+      userData.score = 0;
       await this.message.sendWelcomeMessage(from, userData.language);
       await this.message.sendcategory(from);
     }
