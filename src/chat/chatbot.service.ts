@@ -36,7 +36,7 @@ export class ChatbotService {
       console.log('Creating new user');
       userData = await this.userService.createUser(from, 'english', botID);
     }
-
+    console.log("Userdata.setName---", userData.setName);  
     if (buttonBody) {
       // Mixpanel tracking data
       const trackingData = {

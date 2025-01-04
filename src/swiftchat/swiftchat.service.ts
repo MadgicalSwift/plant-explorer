@@ -78,7 +78,7 @@ export class SwiftchatMessageService extends MessageService {
     }
 
     const plantCards = data[selectedCategory].plants.map((plant) => {
-      const plantUrl = `http://localhost:3000/.app/plant/${encodeURIComponent(
+      const plantUrl = `http://localhost:3001/plant/${encodeURIComponent(
         plant.plant_name,
       )}`;
 
