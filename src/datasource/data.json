@@ -3,44 +3,43 @@
     "plants": [
       {
         "plant_name": "Orchid",
-        "image_url": "https://images.unsplash.com/photo-1534885320675-b08aa131cc5e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b3JjaGlkfGVufDB8fDB8fHww"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Orchidaceae_flowers_-_magenta_colour.jpg"
       },
       {
         "plant_name": "Daisy",
-        "image_url": "https://i.pinimg.com/736x/ca/47/bb/ca47bb1b9a6226d2e5b5bd91f400fcc6.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bellis_perennis_single_Macro.jpg"
       },
       {
         "plant_name": "Rose",
-        "image_url": "https://succulentking.in/wp-content/uploads/2023/07/Rose-Red-Plant.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Knock-Out-OriginalIMG_3830_Edit.jpg"
       },
       {
         "plant_name": "Marigold",
-        "image_url": "https://www.shutterstock.com/image-photo/tagetes-orange-yellow-marigolds-flower-260nw-2269243047.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Marigold_14.jpg"
       },
       {
         "plant_name": "Lavender",
-        "image_url": "https://i.pinimg.com/736x/ca/47/bb/ca47bb1b9a6226d2e5b5bd91f400fcc6.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Single_lavender_flower02.jpg/640px-Single_lavender_flower02.jpg"
       },
       {
         "plant_name": "Jasmine",
-        "image_url": "https://cdn.pixabay.com/photo/2020/06/06/15/48/scent-of-jasmine-5267074_640.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Jasmine_flower_02.jpg/640px-Jasmine_flower_02.jpg"
       },
       {
         "plant_name": "Lotus",
-        "image_url": "https://cdn.pixabay.com/photo/2023/07/23/10/09/flowers-8144828_640.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nelumbo-nucifera-lotosblume.jpg/640px-Nelumbo-nucifera-lotosblume.jpg"
       },
-
       {
         "plant_name": "Tulip",
-        "image_url": "https://m.media-amazon.com/images/I/715MOnufcML._AC_UF1000,1000_QL80_.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Tulipa_suaveolens_floriade_to_Canberra.jpg/640px-Tulipa_suaveolens_floriade_to_Canberra.jpg"
       },
       {
-        "plant_name": "Dahlias",
-        "image_url": "https://cdn.shopify.com/s/files/1/0570/8559/1689/files/IMG_6700_2_2048x2048.jpg"
+        "plant_name": "Dahlia",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Garden_Dahlia_flower_001.jpg/640px-Garden_Dahlia_flower_001.jpg"
       },
       {
         "plant_name": "Sunflower",
-        "image_url": "https://i.pinimg.com/736x/fc/32/86/fc3286fe923eee5ee7dab43b28193c42.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/640px-Sunflower_sky_backdrop.jpg"
       }
     ],
     "quiz_sets": [
@@ -1690,43 +1689,43 @@
     "plants": [
       {
         "plant_name": "Aloe Vera",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDlcEeouAyi8XTsZtZ-McYzbdCI0uqvFGh1A&s"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Starr_011104-0040_Aloe_vera.jpg/640px-Starr_011104-0040_Aloe_vera.jpg"
       },
       {
         "plant_name": "Neem",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aHt_lwAYZS6CVzk66U04_sVJRW3Z4ZJfQg&s"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Azadirachta_indica-Neem_tree.jpg/640px-Azadirachta_indica-Neem_tree.jpg"
       },
       {
         "plant_name": "Holy Basil",
-        "image_url": "https://m.media-amazon.com/images/I/71SS4HkxKXL._AC_UF1000,1000_QL80_.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Holy_Basil_%28Ocimum_tenuiflorum%29_1.jpg/640px-Holy_Basil_%28Ocimum_tenuiflorum%29_1.jpg"
       },
       {
         "plant_name": "Ashwagandha",
-        "image_url": "https://i.pinimg.com/474x/78/2e/44/782e4418816246d949a76f0233a78e18.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Withania_somnifera_Witania_ospa%C5%82a_2021-08-08_08.jpg/640px-Withania_somnifera_Witania_ospa%C5%82a_2021-08-08_08.jpg"
       },
       {
         "plant_name": "Ginger",
-        "image_url": "https://5.imimg.com/data5/TN/WR/MY-42987627/ginger-plant.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Zingiber_officinale_230935597.jpg/640px-Zingiber_officinale_230935597.jpg"
       },
       {
         "plant_name": "Asparagus",
-        "image_url": "https://www.shutterstock.com/image-photo/young-asparagus-plants-growing-vegetable-600nw-2483123619.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Asparagus_racemosus_0741.jpg/640px-Asparagus_racemosus_0741.jpg"
       },
       {
         "plant_name": "Arjun tree",
-        "image_url": "https://thumbs.dreamstime.com/b/terminalia-arjuna-tree-genus-terminalia-commonly-known-as-arjuna-arjun-tree-english-284326114.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Terminalia_arjuna_03a.JPG/640px-Terminalia_arjuna_03a.JPG"
       },
       {
-        "plant_name": "Papermint",
-        "image_url": "https://i.pinimg.com/736x/0d/36/64/0d3664b07d2dbb7ca57f98cadcaa2069.jpg"
+        "plant_name": "Peppermint",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mentha_piperita_0zz.jpg/640px-Mentha_piperita_0zz.jpg"
       },
       {
         "plant_name": "Gooseberry",
-        "image_url": "https://i.pinimg.com/736x/4f/7d/3d/4f7d3dff0e271ef01e3cbc7afd33c729.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ribes_uva-crispa_Hedemora_01.jpg/640px-Ribes_uva-crispa_Hedemora_01.jpg"
       },
       {
         "plant_name": "Tinospora Cordifolia",
-        "image_url": "https://www.shutterstock.com/image-photo/tinospora-cordifolia-common-names-gurjo-260nw-2298553921.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Tinospora_cordifolia_fruits.jpg/640px-Tinospora_cordifolia_fruits.jpg"
       }
     ],
     "quiz_sets": [
@@ -3501,43 +3500,43 @@
     "plants": [
       {
         "plant_name": "Oak",
-        "image_url": "https://i.pinimg.com/236x/0a/c8/b6/0ac8b6a8ead13a9dabcd7346b35292ba.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Quercus_sp_mosaic_leaves_fruits.jpg/640px-Quercus_sp_mosaic_leaves_fruits.jpg"
       },
       {
         "plant_name": "Maple",
-        "image_url": "https://i.pinimg.com/236x/b6/e8/37/b6e837e1f85df6dbe58ab0db708fb13d.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Acer_pseudoplatanus_002.jpg/640px-Acer_pseudoplatanus_002.jpg"
       },
       {
         "plant_name": "Banyan Tree",
-        "image_url": "https://i.pinimg.com/originals/4e/42/73/4e42738333bf48a8a4fef9120b18011f.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Banyan_tree_2024.jpg/640px-Banyan_tree_2024.jpg"
       },
       {
         "plant_name": "Sacred Fig",
-        "image_url": "https://t4.ftcdn.net/jpg/02/41/66/35/360_F_241663511_RQyJxfHeP3cLHyMcEHGFbVEkFtWnWV1o.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ficus_religiosa_Bo.jpg/640px-Ficus_religiosa_Bo.jpg"
       },
       {
         "plant_name": "Coconut Tree",
-        "image_url": "https://t4.ftcdn.net/jpg/02/78/66/97/240_F_278669769_ByH3rJhMtquFqHrEusfwtuqm2HpmZxqb.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Coconut_Tree_Magic.jpg/640px-Coconut_Tree_Magic.jpg"
       },
       {
         "plant_name": "Mango Tree",
-        "image_url": "https://t3.ftcdn.net/jpg/03/33/36/02/240_F_333360278_Gl6LAF4dijaPfjirMgENz4lYP6976SDC.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mango_On_Tree.jpg/640px-Mango_On_Tree.jpg"
       },
       {
         "plant_name": "Sandalwood Tree",
-        "image_url": "https://t4.ftcdn.net/jpg/08/65/30/45/240_F_865304566_2o6jYKylvmQq6iMgfkdG5aZmZC0s0xyU.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Santalum_album_flowers_03.JPG/640px-Santalum_album_flowers_03.JPG"
       },
       {
         "plant_name": "Bamboo Tree",
-        "image_url": "https://t3.ftcdn.net/jpg/09/20/71/20/240_F_920712075_Qfl0P1C1PwMbuBMVuEKWqODmrybqoUqF.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Bamboo_garden.jpg/640px-Bamboo_garden.jpg"
       },
       {
         "plant_name": "Flame Tree",
-        "image_url": "https://t4.ftcdn.net/jpg/03/95/41/43/240_F_395414363_F0IVXH4ck9k8Me5C6oI62MNMJvPgqSyw.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Flame_tree_mali.jpg/640px-Flame_tree_mali.jpg"
       },
       {
         "plant_name": "Deodar Tree",
-        "image_url": "https://t4.ftcdn.net/jpg/05/01/52/21/240_F_501522110_xjuOLEQNNWOAPYQbLMpZJiGUvonM3Z48.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Cedrus_deodara_India02.jpg/640px-Cedrus_deodara_India02.jpg"
       }
     ],
     "quiz_sets": [
@@ -5346,44 +5345,36 @@
   "Fruits 🍎": {
     "plants": [
       {
-        "plant_name": "Apple Tree",
-        "image_url": "https://t4.ftcdn.net/jpg/00/56/68/39/240_F_56683917_DeFx2OYqu53bEiIHa0wbvOYDA4HirWJu.jpg"
+        "plant_name": "Apple",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Apple-on-tree-in-November_~21wmnmgv.jpg/640px-Apple-on-tree-in-November_~21wmnmgv.jpg"
       },
       {
-        "plant_name": "Banana Plant",
-        "image_url": "https://t3.ftcdn.net/jpg/08/85/29/14/240_F_885291498_qFFxo0g2qbCv3Nhha2WbuMVJqGds84Wq.jpg"
+        "plant_name": "Banana",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Musa_hybrid_%28banana_tree%29.jpg/640px-Musa_hybrid_%28banana_tree%29.jpg"
       },
       {
-        "plant_name": "Mango Plant",
-        "image_url": "https://t4.ftcdn.net/jpg/01/57/46/79/240_F_157467994_gn4mLYaiA2YWM9IAqrp7tr2GcZyccl48.jpg"
+        "plant_name": "Orange",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg/640px-Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg"
       },
       {
-        "plant_name": "Orange Plant",
-        "image_url": "https://t4.ftcdn.net/jpg/01/38/22/87/240_F_138228786_SjIGJrkla9JgjLCAiIKTZBhGmkFpBtQU.jpg"
+        "plant_name": "Lemon",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Lemon_tree_with_fruit_and_flowers.jpg/640px-Lemon_tree_with_fruit_and_flowers.jpg"
       },
       {
-        "plant_name": "Lemon Plant",
-        "image_url": "https://t3.ftcdn.net/jpg/04/17/12/74/240_F_417127416_d4JO8ThSdYz8om9zaCqa06Yc7neukNhE.jpg"
+        "plant_name": "Kiwi",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Actinidia_deliciosa_Kiwi_Fruit_%E1%83%99%E1%83%98%E1%83%95%E1%83%98.JPG/640px-Actinidia_deliciosa_Kiwi_Fruit_%E1%83%99%E1%83%98%E1%83%95%E1%83%98.JPG"
       },
       {
-        "plant_name": "Coconut Plant",
-        "image_url": "https://t3.ftcdn.net/jpg/02/99/05/24/240_F_299052492_E8MwfyTRnSMeDaqvMElHZpd7po4vq4Pv.jpg"
+        "plant_name": "Papaya",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Carica_papaya_002.JPG/640px-Carica_papaya_002.JPG"
       },
       {
-        "plant_name": "Papaya Plant",
-        "image_url": "https://t4.ftcdn.net/jpg/05/49/42/75/240_F_549427593_DwjnFVSblQM8L72caQU76KqTcrABdBBZ.jpg"
-      },
-      {
-        "plant_name": "Pomegranate Plant",
-        "image_url": "https://t4.ftcdn.net/jpg/09/98/16/19/240_F_998161997_JwaUYZfcHwyGpPTYFfpPZSXqbv9dkyat.jpg"
+        "plant_name": "Pomegranate",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Punica_granatum_20081018a.jpg/640px-Punica_granatum_20081018a.jpg"
       },
       {
         "plant_name": "Lychee",
-        "image_url": "https://t3.ftcdn.net/jpg/05/34/33/16/240_F_534331629_f0v3FtxYgTQX0HndXDo1l9gPMPjgS10x.jpg"
-      },
-      {
-        "plant_name": "Guava Plant",
-        "image_url": "https://t4.ftcdn.net/jpg/05/36/51/17/240_F_536511777_FxpTigVOFK5QG9Ybx8JPFcjnaj2pxz6l.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lychee.jpg/640px-Lychee.jpg"
       }
     ],
     "quiz_sets": [
@@ -6818,43 +6809,43 @@
     "plants": [
       {
         "plant_name": "Carrot",
-        "image_url": "https://t4.ftcdn.net/jpg/04/57/50/31/240_F_457503102_AKDcTEV1z3ENUf7CKLNGyEQLboJNtmht.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vegetable-Carrot-Bundle-wStalks.jpg/640px-Vegetable-Carrot-Bundle-wStalks.jpg"
       },
       {
         "plant_name": "Tomato",
-        "image_url": "https://t4.ftcdn.net/jpg/07/89/64/75/240_F_789647578_C1jkPmVBFeJHvi6uuLlFqBSKV9fuBK27.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pomodorini_sulla_pianta.jpg/640px-Pomodorini_sulla_pianta.jpg"
       },
       {
         "plant_name": "Potato",
-        "image_url": "https://t4.ftcdn.net/jpg/04/73/66/97/240_F_473669735_ZhX5kDxsZ2VBQeHWjGnkSBb8jO7tT7of.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Potatoes.jpg/640px-Potatoes.jpg"
       },
       {
         "plant_name": "Onion",
-        "image_url": "https://t3.ftcdn.net/jpg/08/06/27/76/240_F_806277699_Nx5aGyJRpOq73l7tNg3vGScO42gMxTon.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Onions.jpg/640px-Onions.jpg"
       },
       {
         "plant_name": "Garlic",
-        "image_url": "https://t3.ftcdn.net/jpg/03/46/60/28/240_F_346602816_FbS8JQ3Lf3wrTDxOBzkIRxxIhrnlebIk.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/GarlicBasket.jpg/640px-GarlicBasket.jpg"
       },
       {
-        "plant_name": "Green peas",
-        "image_url": "https://t3.ftcdn.net/jpg/01/37/22/86/240_F_137228659_TV0jfoxHIxks0ufVjYpdTY3FQh9sFafY.jpg"
+        "plant_name": "Green Peas",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Green_pea_pods.jpg/640px-Green_pea_pods.jpg"
       },
       {
         "plant_name": "Okra",
-        "image_url": "https://t4.ftcdn.net/jpg/01/24/70/93/240_F_124709340_VwDEzSD4xrEz7ljLSG5hkX0fDMkxAsdW.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Okra_%28Abelmoschus_esculentus%29_%283%29.jpg/640px-Okra_%28Abelmoschus_esculentus%29_%283%29.jpg"
       },
       {
         "plant_name": "Brinjal",
-        "image_url": "https://t4.ftcdn.net/jpg/05/25/06/03/240_F_525060359_8TdUsDEQdAhbikeZXL1jxyYN3LTb77j5.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/640px-Solanum_melongena_24_08_2012_%281%29.JPG"
       },
       {
         "plant_name": "Cabbage",
-        "image_url": "https://t4.ftcdn.net/jpg/06/01/40/85/240_F_601408545_tGhFt0zeSOtnCE1wBkrkp1rFCmmZCyPl.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Brassica_oleracea_2011_G1.jpg/640px-Brassica_oleracea_2011_G1.jpg"
       },
       {
         "plant_name": "Cauliflower",
-        "image_url": "https://t4.ftcdn.net/jpg/04/73/65/79/240_F_473657968_N35NB8QufL6VmFODw10tz4HOw7OBfJD0.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chou-fleur_02.jpg/640px-Chou-fleur_02.jpg"
       }
     ],
     "quiz_sets": [
@@ -8404,43 +8395,43 @@
     "plants": [
       {
         "plant_name": "Basil",
-        "image_url": "https://t4.ftcdn.net/jpg/03/70/34/43/240_F_370344312_zg8Kc4wEqO4juLHxAqxQNeQMKxKq7fJw.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg/640px-Basil-Basilico-Ocimum_basilicum-albahaca.jpg"
       },
       {
         "plant_name": "Mint",
-        "image_url": "https://t4.ftcdn.net/jpg/05/20/44/69/240_F_520446954_vggNLkoqfpnPi9WpLqx5guEoHDK3Wxn7.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mint_leaves_%28Mentha_spicata%29.jpg/640px-Mint_leaves_%28Mentha_spicata%29.jpg"
       },
       {
         "plant_name": "Neem",
-        "image_url": "https://t4.ftcdn.net/jpg/02/26/14/29/240_F_226142941_5RdFQ4ANijRnu6yE5zl7ZGEUWIBC4Vg0.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Neem_Tree_%28Azadirachta_indica%29.jpg/640px-Neem_Tree_%28Azadirachta_indica%29.jpg"
       },
       {
         "plant_name": "Coriander",
-        "image_url": "https://t4.ftcdn.net/jpg/02/59/66/55/240_F_259665500_B8ckaORXN6n2Pxk25BQVSv3LGcRUZGra.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/A_scene_of_Coriander_leaves.JPG/640px-A_scene_of_Coriander_leaves.JPG"
       },
       {
         "plant_name": "Oregano",
-        "image_url": "https://t4.ftcdn.net/jpg/04/08/28/13/240_F_408281398_LidDsnbgFmxtnP3XAEYnX9Bb5PdWs5V3.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Origanum_vulgare_%27Country_Cream%27_Lebiodka_pospolita_2009-07-20_02.jpg/640px-Origanum_vulgare_%27Country_Cream%27_Lebiodka_pospolita_2009-07-20_02.jpg"
       },
       {
         "plant_name": "Ginger",
-        "image_url": "https://t4.ftcdn.net/jpg/08/20/23/45/240_F_820234510_xtwKlLAtuVIWqXvy3mKqQd1C493yzWJA.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ginger_Root.jpg/640px-Ginger_Root.jpg"
       },
       {
         "plant_name": "Turmeric",
-        "image_url": "https://t3.ftcdn.net/jpg/09/27/78/14/240_F_927781474_RxsCLBYm6v1rvCHN1OgyywjmMj7NO5Ys.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Curcuma_longa_roots.jpg/640px-Curcuma_longa_roots.jpg"
       },
       {
         "plant_name": "Lemongrass",
-        "image_url": "https://t4.ftcdn.net/jpg/02/42/78/73/240_F_242787350_clKCEe1DA5fgxX0QfY1y0eMorcgX0QRS.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Lemongrass_%28Cymbopogon_citratus%29_1.jpg/640px-Lemongrass_%28Cymbopogon_citratus%29_1.jpg"
       },
       {
         "plant_name": "Fenugreek",
-        "image_url": "https://t4.ftcdn.net/jpg/04/20/71/37/240_F_420713738_OPx2degiXoRZc0BdsXEVvipxmD0HgOfv.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Trigonella_foenum-graecum_kz06.jpg/640px-Trigonella_foenum-graecum_kz06.jpg"
       },
       {
         "plant_name": "Lavender",
-        "image_url": "https://t4.ftcdn.net/jpg/00/25/26/07/240_F_25260774_ZfStaGIGMnLAyjMKjFPqK1LKaa8b397S.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Single_lavender_flower02.jpg/640px-Single_lavender_flower02.jpg"
       }
     ],
     "quiz_sets": [
@@ -9960,43 +9951,43 @@
     "plants": [
       {
         "plant_name": "Saguaro Cactus",
-        "image_url": "https://t4.ftcdn.net/jpg/09/03/60/71/240_F_903607186_GQ1Sr3eIKBbIy5CgFb6tFnilftk70rCn.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Carnegiea_gigantea_Saguaro_cactus_plant.jpg/640px-Carnegiea_gigantea_Saguaro_cactus_plant.jpg"
       },
       {
         "plant_name": "Barrel Cactus",
-        "image_url": "https://t4.ftcdn.net/jpg/08/65/45/55/240_F_865455500_vGJ9ix7YbQ6MDJUxnck8q3oMGROZnqXo.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Fishhook_Barrel_Cactus.jpg/640px-Fishhook_Barrel_Cactus.jpg"
       },
       {
         "plant_name": "Prickly Pear Cactus",
-        "image_url": "https://t4.ftcdn.net/jpg/02/97/61/43/240_F_297614300_C5gzAf571GS1w2pHxoB6qdd26UsUl9ao.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Prickly_Pear_at_Devils_Tower.jpg/640px-Prickly_Pear_at_Devils_Tower.jpg"
       },
       {
         "plant_name": "Bishop’s Cap Cactus",
-        "image_url": "https://cdn.britannica.com/79/180479-050-C1918EB9/Bishop-cap-cactus.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Astrophytum_myriostigma_kz01.jpg/640px-Astrophytum_myriostigma_kz01.jpg"
       },
       {
         "plant_name": "Christmas Cactus",
-        "image_url": "https://t4.ftcdn.net/jpg/02/91/69/07/360_F_291690754_PiWkuSdl3zSD983Ha0Gx2KBwNF2dr6N6.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Christmas_Cactus_%2849322090741%29.jpg/640px-Christmas_Cactus_%2849322090741%29.jpg"
       },
       {
         "plant_name": "Chain Cactus",
-        "image_url": "https://planetdesert.com/cdn/shop/files/Chain-Cactus-_Rhipsalis-paradoxa_-4-inch_5_1400x.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Rhipsalis_paradoxa.jpg/640px-Rhipsalis_paradoxa.jpg"
       },
       {
         "plant_name": "Moon Cactus",
-        "image_url": "https://t3.ftcdn.net/jpg/05/36/21/78/240_F_536217833_xEnApVL0Nc2lbBlXfegH2nGe6fk17Wqd.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Gymnocalycium_mihanovichii_61.JPG/640px-Gymnocalycium_mihanovichii_61.JPG"
       },
       {
         "plant_name": "Bunny Ears Cactus",
-        "image_url": "https://t3.ftcdn.net/jpg/10/00/52/78/240_F_1000527879_7tPZ1kOGvJcMheBKL5sZSOh8cVYMY5TA.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Opuntia_microdasys_in_Jardin_des_plantes_de_Montpellier_02.jpg/640px-Opuntia_microdasys_in_Jardin_des_plantes_de_Montpellier_02.jpg"
       },
       {
         "plant_name": "Aloe Cactus",
-        "image_url": "https://as2.ftcdn.net/v2/jpg/00/14/66/87/1000_F_14668710_Rj2UQKxW4uAFEm8cFYZGSSwGJF9uJipb.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Aloe_mix_10.jpg/640px-Aloe_mix_10.jpg"
       },
       {
         "plant_name": "Fairy Castle Cactus",
-        "image_url": "https://as2.ftcdn.net/v2/jpg/03/83/07/19/1000_F_383071907_AcejUJjviFIz72JXpC107C7v8k7qt0wu.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Acanthocereus_tetragonus_%28homeredwardprice%29_001.jpg/640px-Acanthocereus_tetragonus_%28homeredwardprice%29_001.jpg"
       }
     ],
     "quiz_sets": [
@@ -11411,43 +11402,43 @@
     "plants": [
       {
         "plant_name": "Water Lily",
-        "image_url": "https://t4.ftcdn.net/jpg/03/41/31/15/240_F_341311531_75XCV0tH5dFVh7PWQNJqgt1wpGwF2Ehz.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Water_lily_4.jpg/640px-Water_lily_4.jpg"
       },
       {
         "plant_name": "Lotus",
-        "image_url": "https://t4.ftcdn.net/jpg/09/79/24/75/240_F_979247594_9Ra7Eq7RVmJEl6ZTSFNLzEa6NTzrSxEe.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nelumbo-nucifera-lotosblume.jpg/640px-Nelumbo-nucifera-lotosblume.jpg"
       },
       {
         "plant_name": "Water Hyacinth",
-        "image_url": "https://t4.ftcdn.net/jpg/05/26/48/83/240_F_526488331_dBHgxSx44mR2bePakzJh70odAAvxIzH4.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Water_hyacinth_flower_%281%29.jpg/640px-Water_hyacinth_flower_%281%29.jpg"
       },
       {
         "plant_name": "Water Chestnut",
-        "image_url": "https://t4.ftcdn.net/jpg/01/41/30/01/240_F_141300135_uKdlOshPwKsgk2tnoPmKEEumcRm7VasF.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eleocharis_dulcis_Variegata_0zz.jpg/640px-Eleocharis_dulcis_Variegata_0zz.jpg"
       },
       {
         "plant_name": "Cattail",
-        "image_url": "https://t4.ftcdn.net/jpg/08/15/95/15/240_F_815951586_gXo0MoPaOW2I3E3skmUB9yEKLtXP7CwI.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Closeup_of_cattail_plant.JPG/640px-Closeup_of_cattail_plant.JPG"
       },
       {
         "plant_name": "Elodea",
-        "image_url": "https://t3.ftcdn.net/jpg/04/26/89/86/360_F_426898685_ebNhF32ee7o1HIkQXZQj5WBho6NqRxbv.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Elodea_canadensis_kz03.jpg/640px-Elodea_canadensis_kz03.jpg"
       },
       {
         "plant_name": "Water Lettuce",
-        "image_url": "https://t4.ftcdn.net/jpg/08/31/01/71/240_F_831017126_qBMerSxYeS5eMqNpXdfDwD6gPJNKXVky.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Apu-apu_%28Pistia_stratiotes%29.jpg/640px-Apu-apu_%28Pistia_stratiotes%29.jpg"
       },
       {
         "plant_name": "Hydrilla",
-        "image_url": "https://t3.ftcdn.net/jpg/10/52/98/84/240_F_1052988447_KvcuZNPAzJrziUAhcCInkcwcUAbaR69T.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Hydrilla_USGS.jpg/640px-Hydrilla_USGS.jpg"
       },
       {
-        "plant_name": "Reed Plant",
-        "image_url": "https://i.pinimg.com/originals/75/d8/24/75d8248a81101e9f0d9ecbb49c9eea34.jpg"
+        "plant_name": "Reed",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Reed_-_sea_-_sky_-_Flickr_-_NVEM.jpg/640px-Reed_-_sea_-_sky_-_Flickr_-_NVEM.jpg"
       },
       {
         "plant_name": "Foxtail",
-        "image_url": "https://t4.ftcdn.net/jpg/01/71/27/33/360_F_171273355_PE5FPlbCoGOaO4991cUem5U5mQ0lNz1d.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Setaria_italica_%284656997682%29.jpg/640px-Setaria_italica_%284656997682%29.jpg"
       }
     ],
     "quiz_sets": [
@@ -13022,43 +13013,43 @@
     "plants": [
       {
         "plant_name": "Ivy",
-        "image_url": "https://t3.ftcdn.net/jpg/09/03/15/82/240_F_903158238_HKT0KNxIp38bzGl44pLhkSaj5LJJcCXY.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ivy_plant_hedera.jpg/640px-Ivy_plant_hedera.jpg"
       },
       {
         "plant_name": "Sweet Potato",
-        "image_url": "https://t3.ftcdn.net/jpg/02/25/99/50/240_F_225995021_Kegh5nPAXBnzrckzC6CVfcEwbiTkmHkx.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Ipomoea_batatas_Convolvulaceae.jpg/640px-Ipomoea_batatas_Convolvulaceae.jpg"
       },
       {
         "plant_name": "Money Plant",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9TXyRus2CiG79eiPITUt9owInztje0I9oTg&s"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Money_plant_4.jpg/640px-Money_plant_4.jpg"
       },
       {
         "plant_name": "Strawberry",
-        "image_url": "https://t3.ftcdn.net/jpg/00/85/16/34/360_F_85163407_5T1Z6S29bU5wfiO48CCkSVoOcKTBBoq6.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Strawberry_Plant_with_Fruit.jpg/640px-Strawberry_Plant_with_Fruit.jpg"
       },
       {
         "plant_name": "Honeysuckle",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjrZoazggRsGaKU6qb3p4h4zom2ptS5NDQbA&s"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Lonicera_caprifolium_ms_2.jpg/640px-Lonicera_caprifolium_ms_2.jpg"
       },
       {
         "plant_name": "Muskmelon",
-        "image_url": "https://t4.ftcdn.net/jpg/01/51/20/41/360_F_151204115_L4OZFE0YVmZWyu0gXR1ChtZOocLtNMdZ.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Cucumis_melo_Charentais_2zz.jpg/640px-Cucumis_melo_Charentais_2zz.jpg"
       },
       {
         "plant_name": "Black Pepper",
-        "image_url": "https://t3.ftcdn.net/jpg/10/26/45/64/360_F_1026456478_rykwekMXMiGsXTgy7z77crmgL6le9qwG.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Piper_nigrum_04236.jpg/640px-Piper_nigrum_04236.jpg"
       },
       {
         "plant_name": "Grapevine",
-        "image_url": "https://as1.ftcdn.net/v2/jpg/03/64/35/08/1000_F_364350871_yZ4AnIJSTpyIXz3tm8Dg1nol75fbtJHh.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Vitis_californica_with_grapes.jpg/640px-Vitis_californica_with_grapes.jpg"
       },
       {
         "plant_name": "Pumpkin",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR7PNYOFl3EDOC8HEtC7jH-bWhM8t5MneMZw&s"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pumpkin_plant_%28OCTAGON_leaf%29ofTamilnadu157.jpg/640px-Pumpkin_plant_%28OCTAGON_leaf%29ofTamilnadu157.jpg"
       },
       {
         "plant_name": "Watermelon",
-        "image_url": "https://t4.ftcdn.net/jpg/01/44/06/51/360_F_144065130_dWg0l5IGKGje3CTknM7Dl6yarUoZ6zFa.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Watermelon-garden.jpg/640px-Watermelon-garden.jpg"
       }
     ],
     "quiz_sets": [
@@ -14513,43 +14504,39 @@
     "plants": [
       {
         "plant_name": "Venus Flytrap",
-        "image_url": "https://t3.ftcdn.net/jpg/04/54/43/00/360_F_454430094_AzsnavhZlSfMW1Ht5yYxdhkwJP2I5Dmc.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Venus_Flytrap_Dionaea_muscipula_1060.jpg/640px-Venus_Flytrap_Dionaea_muscipula_1060.jpg"
       },
       {
         "plant_name": "Pitcher Plant",
-        "image_url": "https://as1.ftcdn.net/v2/jpg/05/32/10/06/1000_F_532100652_7yOsH6GzuKuVbdbYYErjXhusLEjOMEcm.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Nepenthes_macrovulgaris_lower.jpg/640px-Nepenthes_macrovulgaris_lower.jpg"
       },
       {
         "plant_name": "Sundew",
-        "image_url": "https://t3.ftcdn.net/jpg/08/85/98/48/360_F_885984813_G9o6SZkmRpRtg3GGKlGnzcjMnX584ZyF.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Drosera_capensis_Luc_Viatour.jpg/640px-Drosera_capensis_Luc_Viatour.jpg"
       },
       {
         "plant_name": "Bladderwort",
-        "image_url": "https://t3.ftcdn.net/jpg/03/85/81/64/360_F_385816489_4JISa3f7G1OBZ35oqY81bql8DMGii72c.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Utricularia_sp_4.jpg/640px-Utricularia_sp_4.jpg"
       },
       {
         "plant_name": "Cobra Lily",
-        "image_url": "https://t4.ftcdn.net/jpg/02/84/45/75/360_F_284457530_fpQ2AkelcxTV5V6jzdzmIMUbUy4dlKtH.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Arisaema_ringens.jpg/640px-Arisaema_ringens.jpg"
       },
       {
         "plant_name": "Butterwort",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoRif2BozjP_mjpGPgt-My2qGOKjFUMSDnw&s"
-      },
-      {
-        "plant_name": "Tropical Pitcher Plant",
-        "image_url": "https://as1.ftcdn.net/v2/jpg/02/88/78/66/1000_F_288786628_S7XPY0ylg5LffLb1nuu19AFZMpDMJjVb.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pinguicula_vulgaris_140505.jpg/640px-Pinguicula_vulgaris_140505.jpg"
       },
       {
         "plant_name": "Aldrovanda",
-        "image_url": "https://www.carnivorousplantresource.com/wp-content/uploads/2017/02/aldrovanda.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/AldrovandaVesiculosa1.jpg/640px-AldrovandaVesiculosa1.jpg"
       },
       {
         "plant_name": "Drosophyllum",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmcaZGsFoyQfQnKwdfODH6tAvURP9hEMjHA&s"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Drosophyllum_lusitanicum_kz08.jpg/640px-Drosophyllum_lusitanicum_kz08.jpg"
       },
       {
         "plant_name": "Brocchinia reducta",
-        "image_url": "https://curiousplant.com/wp-content/uploads/2022/03/brocchinia-reducta-6.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Brocchinia_reducta_Habitus_Bln0906b.jpg/640px-Brocchinia_reducta_Habitus_Bln0906b.jpg"
       }
     ],
     "quiz_sets": [

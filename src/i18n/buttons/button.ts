@@ -1,5 +1,6 @@
 import { localisedStrings } from '../en/localised-strings';
 import data from 'src/datasource/data.json';
+import _ from 'lodash';
 
 export function categoryButton(from: string) {
   const buttons = localisedStrings.category.map((category: string) => ({
@@ -87,6 +88,7 @@ export function firstQuestionWithOptionButtons(
     );
     return;
   }
+  const shuffledOptions = _.shuffle(firstQuestion.options);
   // Send the first question to the user
   const requestData = {
     to: from,
@@ -98,7 +100,7 @@ export function firstQuestionWithOptionButtons(
           body: firstQuestion.question, // Displaying the question text
         },
       },
-      buttons: firstQuestion.options.map((option) => ({
+      buttons: shuffledOptions.map((option) => ({
         type: 'solid',
         body: option,
         reply: option,
@@ -144,7 +146,7 @@ export function nextQuestionWithOptionButtons(
     );
     return;
   }
-
+  const shuffledOptions = _.shuffle(currentQuestion.options);
   return {
     to: from,
     type: 'button',
@@ -155,7 +157,7 @@ export function nextQuestionWithOptionButtons(
           body: currentQuestion.question, // Displaying the current question text
         },
       },
-      buttons: currentQuestion.options.map((option) => ({
+      buttons: shuffledOptions.map((option) => ({
         type: 'solid',
         body: option,
         reply: option,
