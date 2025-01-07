@@ -20,6 +20,7 @@ export class SwiftchatMessageService extends MessageService {
   apiKey = process.env.API_KEY;
   apiUrl = process.env.API_URL;
   baseUrl = `${this.apiUrl}/${this.botId}/messages`;
+  server_url = process.env.SERVER_LINK;
 
   private prepareRequestData(from: string, requestBody: string): any {
     return {
@@ -78,10 +79,10 @@ export class SwiftchatMessageService extends MessageService {
     }
 
     const plantCards = data[selectedCategory].plants.map((plant) => {
-      const plantUrl = `http://localhost:3000/.app/plant/${encodeURIComponent(
+      const plantUrl = `${this.server_url}/${encodeURIComponent(
         plant.plant_name,
       )}`;
-
+   console.log(plantUrl)
       return {
         header: {
           type: 'image',
