@@ -25,7 +25,7 @@ export class AppController {
   @Post('/message')
   async handelUserMessage(@Body() body, @Res() res): Promise<void> {
     try {
-      this.chatbotService.processMessage(body);
+      await this.chatbotService.processMessage(body);
       res.status(200).send({
         status: {
           code: 0,

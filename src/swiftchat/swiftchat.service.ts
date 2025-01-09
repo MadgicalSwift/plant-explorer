@@ -12,6 +12,7 @@ import {
 import { localisedStrings } from 'src/i18n/en/localised-strings';
 import data from 'src/datasource/data.json';
 
+
 dotenv.config();
 
 @Injectable()
@@ -20,6 +21,7 @@ export class SwiftchatMessageService extends MessageService {
   apiKey = process.env.API_KEY;
   apiUrl = process.env.API_URL;
   baseUrl = `${this.apiUrl}/${this.botId}/messages`;
+  server_url = process.env.SERVER_LINK;
 
   private prepareRequestData(from: string, requestBody: string): any {
     return {
@@ -78,7 +80,7 @@ export class SwiftchatMessageService extends MessageService {
     }
 
     const plantCards = data[selectedCategory].plants.map((plant) => {
-      const plantUrl = `https://plant-app-87197.web.app/plant/${encodeURIComponent(
+      const plantUrl = `${this.server_url}#/plant/${encodeURIComponent(
         plant.plant_name,
       )}`;
 
