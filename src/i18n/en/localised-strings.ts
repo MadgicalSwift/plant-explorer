@@ -2,7 +2,7 @@ export const localisedStrings = {
   validText: ['hi', 'Hi', 'HI', 'hI', 'Hello', 'hello', 'hola', 'Hii', 'hii'], 
   welcomeMessage:
     'Welcome to Plant Explorer! 🌿 Discover fascinating plants and their vital role in our world. Let’s explore nature together!',
-    categorymessage: 'Choose a category to explore:',
+    categorymessage: '🌿 Pick a Plant Category and start your journey into the wonders of nature! 🍃✨',
   category: [
     'Flowering Plants 🌸',
     'Medicinal Plants 🌿',
@@ -18,8 +18,8 @@ export const localisedStrings = {
   carousalMessage: (selectedCategory: string) => `Great choice! Here are some popular plants in the ${selectedCategory}. Click on any plant to learn more about it:`,
   afterCarousalMessage: (selectedCategory: string) => `Want to test your knowledge about ${selectedCategory}?`,
   startButton: 'Start Quiz',
-  exploreButton: 'Explore More Data',
-  quizMessage: (selectedCategory: string) =>`🎉 Let’s start the quiz! 📝 We’ll ask you 10 questions about ${selectedCategory}. ✅ You’ll get 1 mark for each correct answer and ❌ 0 marks for incorrect answers. Good luck! 🍀`,  
+  exploreButton: 'Change Plant Category',
+  quizMessage: (selectedCategory: string) =>`🎉 Ready to dive in? 📝 Let's begin the quiz on ${selectedCategory}! 🌿 Answer 10 exciting questions and earn ✅ 1 point for each correct answer—❌ 0 for wrong ones. Show off your plant knowledge! 🍀 Good luck!`,  
   correctAnser:'That’s correct! 🌟',
   incorrectAnswer: (correctAnswer: string) =>`Oops, the correct answer was ${correctAnswer}. Keep learning!`,
   shareMessage: (score: number) => `I scored ${score}/10 in the Plant Quiz! Try it: https://web.convegenius.ai/bots?botId=0220315447059806`,
