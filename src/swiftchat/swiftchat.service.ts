@@ -12,7 +12,6 @@ import {
 import { localisedStrings } from 'src/i18n/en/localised-strings';
 import data from 'src/datasource/data.json';
 
-
 dotenv.config();
 
 @Injectable()
@@ -183,12 +182,17 @@ export class SwiftchatMessageService extends MessageService {
 
     // Get the current question
     const currentQuestion = selectedQuizSet.questions[currentQuestionIndex];
-
+    // Retrieve the explanation
+    const explanation = currentQuestion.explanation;
+    // Check if explanation is missing
+    if (!explanation) {
+      console.log('Explanation not found');
+    }
     // Check if the user's answer matches the correct answer
     if (userAnswer === currentQuestion.answer) {
       const requestData = this.prepareRequestData(
         from,
-        localisedStrings.correctAnser,
+        `${localisedStrings.correctAnser} \n**Explanation:** ${explanation}`,
       );
 
       await this.sendMessage(this.baseUrl, requestData, this.apiKey);
@@ -196,7 +200,9 @@ export class SwiftchatMessageService extends MessageService {
     } else {
       const requestData = this.prepareRequestData(
         from,
-        localisedStrings.incorrectAnswer(currentQuestion.answer),
+        `${localisedStrings.incorrectAnswer(
+          currentQuestion.answer,
+        )} \n**Explanation:** ${explanation}`,
       );
 
       await this.sendMessage(this.baseUrl, requestData, this.apiKey);

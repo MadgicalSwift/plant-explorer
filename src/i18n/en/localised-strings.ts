@@ -19,7 +19,7 @@ export const localisedStrings = {
   afterCarousalMessage: (selectedCategory: string) => `Want to test your knowledge about ${selectedCategory}?`,
   startButton: 'Start Quiz',
   exploreButton: 'Explore More Data',
-  quizMessage: (selectedCategory: string) => `Let’s start the quiz! Answer these 10 questions and see how much you know about ${selectedCategory}!`,
+  quizMessage: (selectedCategory: string) =>`🎉 Let’s start the quiz! 📝 We’ll ask you 10 questions about ${selectedCategory}. ✅ You’ll get 1 mark for each correct answer and ❌ 0 marks for incorrect answers. Good luck! 🍀`,  
   correctAnser:'That’s correct! 🌟',
   incorrectAnswer: (correctAnswer: string) =>`Oops, the correct answer was ${correctAnswer}. Keep learning!`,
   shareMessage: (score: number) => `I scored ${score}/10 in the Plant Quiz! Try it: https://web.convegenius.ai/bots?botId=0220315447059806`,

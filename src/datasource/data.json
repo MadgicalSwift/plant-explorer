@@ -185,7 +185,8 @@
           {
             "question": "Which part of the daisy is typically bright yellow?",
             "options": ["Petals", "Leaves", "Stem", "Center"],
-            "answer": "Center"
+            "answer": "Center",
+            "explanation": "The center of the daisy, known as the disc floret, is typically bright yellow and forms the core of the flower."
           },
           {
             "question": "What is a common use of lavender in skincare products?",
@@ -257,7 +258,8 @@
           {
             "question": "The orchid family is one of the ____ plant families in the world.",
             "options": ["Largest", "Smallest", "Most endangered", "Oldest"],
-            "answer": "Largest"
+            "answer": "Largest",
+            "explanation": "The orchid family, known as Orchidaceae, is one of the largest plant families in the world, with over 25,000 species found in diverse habitats globally."
           },
           {
             "question": "What is a common pest that affects rose plants?",
@@ -274,7 +276,8 @@
           {
             "question": "Daisies are commonly associated with which symbolic meaning?",
             "options": ["Hope", "Innocence", "Strength", "Love"],
-            "answer": "Innocence"
+            "answer": "Innocence",
+            "explanation": "Daisies are often associated with innocence and purity, stemming from their simple and delicate appearance, as well as their use in folklore and literature to represent childlike qualities."
           },
           {
             "question": "What is the ideal temperature range for Gardenia plants?",
@@ -283,9 +286,10 @@
             "explanation": "Gardenias grow best in temperatures between 15-25°C, avoiding extreme heat or frost."
           },
           {
-            "question": "Daisies are commonly associated with which symbolic meaning?",
-            "options": ["Hope", "Innocence", "Strength", "Love"],
-            "answer": "Innocence"
+            "question": "Roses are often associated with which symbolic meaning?",
+            "options": ["Love", "Courage", "Wisdom", "Freedom"],
+            "answer": "Love",
+            "explanation": "Roses, particularly red ones, are a universal symbol of love and passion. Their association with romance has been celebrated in art, literature, and traditions throughout history."
           }
         ]
       },
@@ -460,7 +464,8 @@
           {
             "question": "Which part of the daisy is edible?",
             "options": ["Stem", "Flower", "Leaves", "Roots"],
-            "answer": "Flower"
+            "answer": "Flower",
+            "explanation": "The flower of the daisy is edible and is often used as a garnish or in salads. It has a mildly bitter taste and adds visual appeal to dishes."
           },
           {
             "question": "Why are violets sometimes called 'spring ephemerals'?",
@@ -476,7 +481,8 @@
           {
             "question": "Orchids are known for their unique pollination strategy involving which of the following?",
             "options": ["Birds", "Bats", "Insects", "Wind"],
-            "answer": "Insects"
+            "answer": "Insects",
+            "explanation": "Orchids often rely on insects, such as bees, butterflies, and moths, for pollination. Many orchids have evolved to attract specific insects through scent, color, and shape, sometimes even mimicking the appearance of a mate to ensure pollination."
           },
           {
             "question": "In what climate does jasmine thrive best?",
@@ -493,7 +499,8 @@
           {
             "question": "What color are the petals of a typical daisy flower?",
             "options": ["Blue", "Yellow", "White", "Purple"],
-            "answer": "White"
+            "answer": "White",
+            "explanation": "The petals of a typical daisy flower are white, surrounding a yellow center. This characteristic is common in many species of daisies, such as the common English daisy."
           },
           {
             "question": "What is the ideal temperature for growing dahlias?",
@@ -622,7 +629,8 @@
           {
             "question": "What is the primary habitat of orchids?",
             "options": ["Rainforests", "Deserts", "Mountains", "Grasslands"],
-            "answer": "Rainforests"
+            "answer": "Rainforests",
+            "explanation": "Orchids are primarily found in rainforests, where the warm, humid conditions provide an ideal environment for their growth. Many species of orchids are epiphytes, meaning they grow on trees or other surfaces rather than in the soil."
           },
           {
             "question": "Why are marigolds popular in organic farming?",
@@ -751,7 +759,8 @@
           {
             "question": "Orchids are known to grow on which type of structure?",
             "options": ["Soil", "Rocks", "Other plants", "Water"],
-            "answer": "Other plants"
+            "answer": "Other plants",
+            "explanation": "Many orchids are epiphytes, meaning they grow on other plants, typically trees, rather than in the soil. They use their roots to attach to the host plant and absorb moisture and nutrients from the air and rain."
           },
           {
             "question": "How often should Gardenia plants be watered?",
@@ -782,9 +791,10 @@
             "explanation": "Violet seeds are dispersed by a mechanism where they are ejected forcefully from seed pods."
           },
           {
-            "question": "Orchids are known for their unique pollination strategy involving which of the following?",
-            "options": ["Birds", "Bats", "Insects", "Wind"],
-            "answer": "Insects"
+            "question": "Which flower is commonly associated with funerals and mourning?",
+            "options": ["Lily", "Rose", "Tulip", "Daisy"],
+            "answer": "Lily",
+            "explanation": "Lilies, particularly white lilies, are commonly associated with funerals and mourning. They symbolize the restoration of the soul to a peaceful state, and their elegant, pure appearance makes them a traditional flower for remembrance."
           }
         ]
       },
@@ -816,7 +826,8 @@
               "Thorns",
               "Edible petals"
             ],
-            "answer": "Symmetrical petals"
+            "answer": "Symmetrical petals",
+            "explanation": "Orchids are known for their unique symmetrical flowers, often with a distinctive lip or 'labellum' that sets them apart from other flowers. This symmetry is a key feature that helps attract specific pollinators."
           },
           {
             "question": "What is the lifespan of a lavender plant?",
@@ -993,14 +1004,10 @@
             "explanation": "Lavender is drought-resistant and requires minimal watering, making it an excellent choice for low-maintenance landscaping."
           },
           {
-            "question": "Which of these is a unique characteristic of orchids?",
-            "options": [
-              "Symmetrical petals",
-              "Multiple colors in one flower",
-              "Thorns",
-              "Edible petals"
-            ],
-            "answer": "Symmetrical petals"
+            "question": "Which of these flowers is known for having a distinct, sweet fragrance often used in perfumes?",
+            "options": ["Lavender", "Jasmine", "Tulip", "Sunflower"],
+            "answer": "Jasmine",
+            "explanation": "Roses are famous for their fragrant petals, which are often used in the creation of perfumes. Their sweet, floral scent has made them a symbol of love and beauty, as well as a popular choice in the perfume industry."
           },
           {
             "question": "Which color is most commonly associated with lavender flowers?",
@@ -1022,7 +1029,8 @@
           {
             "question": "How long can an orchid typically live?",
             "options": ["1-2 years", "10-15 years", "20-30 years", "5-7 years"],
-            "answer": "10-15 years"
+            "answer": "10-15 years",
+            "explanation": "Orchids can live for a long time, often between 10-15 years, depending on the species and care provided. With proper maintenance, some orchids can even live longer and continue to bloom for many years."
           },
           {
             "question": "What is a common use of jasmine flowers in Southeast Asia?",
@@ -1048,9 +1056,15 @@
             "explanation": "Gardenia flowers are typically white and are known for their beautiful appearance and strong fragrance."
           },
           {
-            "question": "The orchid family is one of the ____ plant families in the world.",
-            "options": ["Largest", "Smallest", "Most endangered", "Oldest"],
-            "answer": "Largest"
+            "question": "Which of these is a common use of orchids besides ornamental purposes?",
+            "options": [
+              "Medicinal purposes",
+              "Edible flowers",
+              "Perfume production",
+              "All of the above"
+            ],
+            "answer": "All of the above",
+            "explanation": "Orchids, particularly the roots and extracts from some species, have been used in traditional medicine for their supposed healing properties, including in treatments for respiratory issues and as general tonics."
           }
         ]
       },
@@ -1144,14 +1158,10 @@
             "explanation": "Violet plants are perennials, meaning they live for more than two years."
           },
           {
-            "question": "Which of these is a unique characteristic of orchids?",
-            "options": [
-              "Symmetrical petals",
-              "Multiple colors in one flower",
-              "Thorns",
-              "Edible petals"
-            ],
-            "answer": "Symmetrical petals"
+            "question": "Which flower is known for its ability to bloom in diverse climates, from tropical to temperate regions?",
+            "options": ["Orchid", "Rose", "Daffodil", "Tulip"],
+            "answer": "Orchid",
+            "explanation": "Orchids are known for their adaptability, thriving in a wide range of climates, from tropical rainforests to temperate regions. This versatility in growing conditions has made them one of the most diverse and widespread plant families in the world."
           },
           {
             "question": "What season do tulips usually bloom?",
@@ -1224,7 +1234,8 @@
           {
             "question": "Which family do daisies belong to?",
             "options": ["Asteraceae", "Rosaceae", "Orchidaceae", "Fabaceae"],
-            "answer": "Asteraceae"
+            "answer": "Asteraceae",
+            "explanation": "Daisies belong to the Asteraceae family, also known as the daisy or sunflower family. This family is one of the largest plant families, encompassing not only daisies but also sunflowers, chrysanthemums, and asters."
           },
           {
             "question": "How can you propagate a Gardenia plant?",
@@ -1262,9 +1273,10 @@
             "explanation": "Different parts of the jasmine plant, such as flowers, leaves, and roots, are used in traditional medicine for their health benefits."
           },
           {
-            "question": "What color are the petals of a typical daisy flower?",
-            "options": ["Blue", "Yellow", "White", "Purple"],
-            "answer": "White"
+            "question": "Which part of the daisy flower is typically yellow?",
+            "options": ["Petals", "Stems", "Center disc", "Leaves"],
+            "answer": "Center disc",
+            "explanation": "The center disc of a daisy, also known as the 'disk florets,' is typically yellow. It is surrounded by white petals, which together give the flower its characteristic appearance."
           },
           {
             "question": "What is a hybrid tulip?",
@@ -1577,7 +1589,8 @@
               "Medical herbs",
               "Perfumes"
             ],
-            "answer": "Flower crowns"
+            "answer": "Flower crowns",
+            "explanation": "Daisies are commonly used to make flower crowns, a traditional activity in many cultures. The simple and delicate flowers are woven together to create crowns worn during celebrations, festivals, and rituals."
           },
           {
             "question": "What is the primary use of Gardenia flowers in traditional medicine?",
@@ -1591,19 +1604,21 @@
             "explanation": "In traditional medicine, Gardenia flowers are often used to promote relaxation and reduce stress."
           },
           {
-            "question": "Orchids are known to grow on which type of structure?",
-            "options": ["Soil", "Rocks", "Other plants", "Water"],
-            "answer": "Other plants"
+            "question": "Which of these is a common habitat for orchids to thrive in?",
+            "options": [
+              "Tropical forests",
+              "Deserts",
+              "Swamps",
+              "Mountain tops"
+            ],
+            "answer": "Tropical forests",
+            "explanation": "Orchids are commonly found in tropical forests, where the warm and humid environment provides the ideal conditions for their growth. Many orchids are epiphytes, meaning they grow on trees and receive nutrients from the air and rain."
           },
           {
-            "question": "Daisies are often used in which traditional activity?",
-            "options": [
-              "Flower crowns",
-              "Cooking spices",
-              "Medical herbs",
-              "Perfumes"
-            ],
-            "answer": "Flower crowns"
+            "question": "Which season is the daisy flower most commonly associated with?",
+            "options": ["Spring", "Summer", "Autumn", "Winter"],
+            "answer": "Summer",
+            "explanation": "Daisies are most commonly associated with summer due to their vibrant and cheerful appearance. They bloom during the warmer months, often peaking in late spring and summer when the weather is ideal for their growth."
           },
           {
             "question": "What can you add to the soil to increase its acidity for Gardenias?",
@@ -5919,7 +5934,7 @@
           },
           {
             "question": "How many segments does an average orange have?",
-            "options": ["6-8", "8-12", "12-16", "16-20"],
+            "options": ["6-8", "8-12", "10-12", "16-20"],
             "answer": "10-12",
             "explanation": "An average orange has between 10 to 12 segments filled with juice."
           },
@@ -6720,7 +6735,7 @@
           },
           {
             "question": "How do you propagate a guava plant?",
-            "options": ["Seeds", "Cuttings", "Grafting", "Both"],
+            "options": ["Seeds", "Cuttings", "Both"],
             "answer": "Both",
             "explanation": "Guava plants can be propagated through seeds or cuttings."
           },

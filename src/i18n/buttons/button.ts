@@ -97,7 +97,7 @@ export function firstQuestionWithOptionButtons(
       body: {
         type: 'text',
         text: {
-          body: firstQuestion.question, // Displaying the question text
+          body: `Question 1.\n${firstQuestion.question}`, // Displaying the question text
         },
       },
       buttons: shuffledOptions.map((option) => ({
@@ -146,6 +146,8 @@ export function nextQuestionWithOptionButtons(
     );
     return;
   }
+  currentQuestionIndex += 1;
+  
   const shuffledOptions = _.shuffle(currentQuestion.options);
   return {
     to: from,
@@ -154,7 +156,7 @@ export function nextQuestionWithOptionButtons(
       body: {
         type: 'text',
         text: {
-          body: currentQuestion.question, // Displaying the current question text
+          body: `Question ${currentQuestionIndex}.\n${currentQuestion.question}`, // Displaying the current question text
         },
       },
       buttons: shuffledOptions.map((option) => ({

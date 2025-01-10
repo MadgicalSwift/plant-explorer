@@ -12,7 +12,6 @@ export class ChatbotService {
   private readonly userService: UserService;
   private readonly mixpanel: MixpanelService;
 
-
   constructor(
     intentClassifier: IntentClassifier,
     message: MessageService,
@@ -23,18 +22,24 @@ export class ChatbotService {
     this.message = message;
     this.userService = userService;
     this.mixpanel = mixpanel;
-    
   }
 
   public async processMessage(body: any): Promise<any> {
-    const { from, text, button_response } = body;
+    const { from, text, button_response, persistent_menu_response } = body;
     const textBody = text?.body;
     const buttonBody = button_response?.body;
+    const persistentMenuBody = persistent_menu_response?.body;
     let botID = process.env.BOT_ID;
     let userData = await this.userService.findUserByMobileNumber(from, botID);
     if (!userData) {
       console.log('Creating new user');
       userData = await this.userService.createUser(from, 'english', botID);
+    }
+   
+    if (persistentMenuBody) {
+      userData.currentQuestionIndex = 0;
+      userData.score = 0;
+      await this.message.sendcategory(from);
     }
     if (buttonBody) {
       // Mixpanel tracking data
@@ -82,11 +87,11 @@ export class ChatbotService {
           break;
 
         case buttonBody === localisedStrings.plantCategoryButton:
-          console.log(buttonBody);
+          
           await this.message.sendcategory(from);
           break;
         case buttonBody === localisedStrings.retakeQuizButton:
-          console.log(buttonBody);
+         
           await this.message.sendNextQuestion(
             from,
             userData.selectedCategory,
