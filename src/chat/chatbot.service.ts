@@ -98,8 +98,19 @@ export class ChatbotService {
             userData.setName,
             userData.currentQuestionIndex,
           );
-
           break;
+
+        
+          case buttonBody === localisedStrings.tryAnotherQuiz:
+         
+          await this.message.sendQuizMessage(from, userData.selectedCategory);
+          const setName = await this.message.sendFirstquestion(
+            from,
+            userData.selectedCategory,
+          );
+          userData.setName = setName;
+          break;
+         
         default: {
           const score = await this.message.checkAnswer(
             from,
@@ -110,7 +121,7 @@ export class ChatbotService {
           );
           userData.score += score;
           userData.currentQuestionIndex += 1;
-          if (userData.currentQuestionIndex >= 10) {
+          if (userData.currentQuestionIndex >= 5) {
             await this.message.sendScoreCard(from, userData.score);
             await this.message.sendButtonAfterScore(
               from,

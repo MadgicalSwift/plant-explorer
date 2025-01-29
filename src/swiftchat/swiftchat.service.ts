@@ -70,7 +70,7 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-  async sendCarousal(from: string, selectedCategory: string) {
+  /*async sendCarousal(from: string, selectedCategory: string) {
     if (!data[selectedCategory]?.plants) {
       console.log(
         `Category ${selectedCategory} not found or contains no plants.`,
@@ -125,7 +125,115 @@ export class SwiftchatMessageService extends MessageService {
     } catch (error) {
       console.error('Error sending message:', error);
     }
+  }*/
+
+
+    async sendCarousal(from: string, selectedCategory: string, offset: number = 0) {
+      if (!data[selectedCategory]?.plants) {
+          console.log(`Category ${selectedCategory} not found or contains no plants.`);
+          return;
+      }
+  
+      const plantsList = data[selectedCategory].plants;
+      const totalPlants = plantsList.length;
+      const pageSize = 5; 
+      const nextOffset = offset + pageSize;
+      const prevOffset = offset - pageSize;
+  
+      
+      const plantCards = plantsList.slice(offset, nextOffset).map((plant) => {
+          const plantUrl = `${this.server_url}#/plant/${encodeURIComponent(plant.plant_name)}`;
+  
+          return {
+              header: {
+                  type: 'image',
+                  image: {
+                      url: plant.image_url,
+                      body: plant.plant_name,
+                  },
+              },
+              body: {
+                  title: plant.plant_name,
+                  subtitle: `Explore the beauty of the ${plant.plant_name}`,
+              },
+              actions: [
+                  {
+                      button_text: 'Learn More',
+                      type: 'website',
+                      website: {
+                          title: `Learn about ${plant.plant_name}`,
+                          payload: 'plant_info',
+                          url: plantUrl,
+                      },
+                  },
+              ],
+          };
+      });
+  
+      // Add pagination buttons
+      const paginationButtons = [];
+  
+      // "Previous" button (if applicable)
+      if (offset > 0) {
+          paginationButtons.push({
+              button_text: 'Previous',
+              type: 'postback',
+              payload: JSON.stringify({
+                  action: 'paginate_plants',
+                  category: selectedCategory,
+                  offset: prevOffset, // Load previous batch
+              }),
+          });
+      }
+  
+      // "Next" button (if applicable)
+      if (nextOffset < totalPlants) {
+          paginationButtons.push({
+              button_text: 'Next',
+              type: 'postback',
+              payload: JSON.stringify({
+                  action: 'paginate_plants',
+                  category: selectedCategory,
+                  offset: nextOffset, // Load next batch
+              }),
+          });
+      }
+  
+      // Add pagination buttons as a separate card
+      if (paginationButtons.length > 0) {
+          plantCards.push({
+              header: {
+                  type: 'image',
+                  image: {
+                      url: 'https://example.com/pagination.png', // Placeholder image for pagination
+                      body: 'More Plants',
+                  },
+              },
+              body: {
+                  title: 'More Plants',
+                  subtitle: 'Navigate through the options using the buttons below.',
+              },
+              actions: paginationButtons,
+          });
+      }
+  
+      const requestData = {
+          to: from,
+          type: 'card',
+          card: plantCards,
+      };
+  
+      try {
+          const response = await this.sendMessage(this.baseUrl, requestData, this.apiKey);
+          return response;
+      } catch (error) {
+          console.error('Error sending message:', error);
+      }
   }
+  
+  
+  
+  
 
   async sendStartQuizandExploreButton(from: string, selectedCategory: string) {
     const requestData = startAndExploreButton(from, selectedCategory);
@@ -227,7 +335,7 @@ export class SwiftchatMessageService extends MessageService {
   }
 
   async sendScoreCard(from: string, score: number) {
-    const percentage = (score / 10) * 100;
+    const percentage = (score / 5) * 100;
     const currentDate = new Date();
     const formattedDate = `${String(currentDate.getDate()).padStart(
       2,
@@ -241,17 +349,17 @@ export class SwiftchatMessageService extends MessageService {
     let animation = '';
     let text2 = '';
     // Assign badge and performance based on score
-    if (score === 10) {
+    if (score === 5) {
       badge = 'Gold🥇';
       performance = 'high';
       animation = 'confetti';
       text2 = 'Outstanding! Perfect score!';
-    } else if (score >= 8) {
+    } else if (score >= 4) {
       badge = 'Silver🥈';
       performance = 'high';
       animation = 'confetti';
       text2 = 'Great job! You nailed it!';
-    } else if (score >= 5) {
+    } else if (score >= 3) {
       badge = 'Bronze🥉';
       performance = 'medium';
       animation = undefined;

@@ -195,7 +195,13 @@ export function scoreWithButtons(from: string, selectedCategory: string){
           type: 'solid',
           body: localisedStrings.retakeQuizButton,
           reply: localisedStrings.retakeQuizButton,
+        },
+        {
+          type: 'solid',
+          body: localisedStrings.tryAnotherQuiz,
+          reply: localisedStrings.tryAnotherQuiz,
         }
+
       ],
       allow_custom_response: false,
     },

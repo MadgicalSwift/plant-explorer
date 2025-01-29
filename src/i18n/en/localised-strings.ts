@@ -27,6 +27,7 @@ export const localisedStrings = {
   moreAboutButton: (selectedCategory: string) => `Learn more about ${selectedCategory}`,
   plantCategoryButton: 'Choose a Different Plant Category',
   retakeQuizButton: 'Retake Quiz',
+  tryAnotherQuiz: 'Try Another Quiz',
   seeMoreMessage: 'See More Data',
   language_hindi: 'हिन्दी',
   language_english: 'English',
