@@ -29,8 +29,8 @@ export abstract class MessageService {
   abstract sendWelcomeMessage(from: string, language: string);
   abstract sendLanguageChangedMessage(from: string, language: string);
   abstract sendcategory(from: string)
-  abstract sendCarousal(from: string, selectedCategory: string);
-  abstract sendStartQuizandExploreButton(from: string, selectedCategory: string);
+  abstract sendCarousal(from: string, selectedCategory: string,currentPage: number);
+  abstract sendStartQuizandExploreButton(from: string, selectedCategory: string, isSeeMore: boolean);
   abstract sendQuizMessage(from: string, selectedCategory: string);
   abstract sendFirstquestion(from: string, selectedCategory: string);
   abstract sendNextQuestion(from: string, selectedCategory: string, setName: string, currentQuestionIndex: number);

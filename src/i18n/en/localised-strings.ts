@@ -18,6 +18,7 @@ export const localisedStrings = {
   carousalMessage: (selectedCategory: string) => `Great choice! Here are some popular plants in the ${selectedCategory}. Click on any plant to learn more about it.`,
   afterCarousalMessage: (selectedCategory: string) => `Want to test your knowledge about ${selectedCategory}?`,
   startButton: 'Start Quiz',
+  seeMore:"See More",
   exploreButton: 'Change Plant Category',
   quizMessage: (selectedCategory: string) =>`🎉 Ready to dive in? Let's begin the quiz on ${selectedCategory}! Answer 10 exciting questions and earn ✅ 1 point for each correct answer—❌ 0 for wrong ones. Show off your plant knowledge! 🍀 Good luck!`,  
   correctAnser:'That’s correct! 🌟',

@@ -1,24 +1,33 @@
-import { IsString, IsNumber } from 'class-validator';
-
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+@Entity()
 export class User {
-  @IsString()
+  @PrimaryGeneratedColumn()
+  id: number;
+
+  @Column()
   mobileNumber: string;
 
-  @IsString()
+  @Column()
   language: string;
 
-  @IsString()
+  @Column()
   Botid: string;
 
-  @IsString()
-  selectedCategory: string | null;
+  @Column({ nullable: true })
+  selectedCategory: string ;
 
-  @IsString()
-  setName: string | null;
+  @Column({ nullable: true })
+  setName: string ;
 
-  @IsNumber()
-  currentQuestionIndex: number = 0;
+  @Column({ default: 0 })
+  currentQuestionIndex: number ;
 
-  @IsNumber()
-  score: number = 0;
+  @Column({ default: 0 })
+  score: number ;
+
+  @Column({ default: 0 })
+  currCrouslePage: number ;
+
+  @Column({ default: 0 })
+  maxCrouselPage: number ;
 }

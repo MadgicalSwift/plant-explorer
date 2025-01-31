@@ -55,6 +55,42 @@ export function startAndExploreButton(
   };
 }
 
+export function QuizWithMoreButton(
+  from: string,
+  selectedCategory: string,
+) {
+  return {
+    to: from,
+    type: 'button',
+    button: {
+      body: {
+        type: 'text',
+        text: {
+          body: localisedStrings.afterCarousalMessage(selectedCategory),
+        },
+      },
+      buttons: [
+        {
+          type: 'solid',
+          body: localisedStrings.seeMore,
+          reply: localisedStrings.seeMore,
+        },
+        {
+          type: 'solid',
+          body: localisedStrings.startButton,
+          reply: localisedStrings.startButton,
+        },
+        {
+          type: 'solid',
+          body: localisedStrings.exploreButton,
+          reply: localisedStrings.exploreButton,
+        }
+      ],
+      allow_custom_response: false,
+    },
+  };
+}
+
 export function firstQuestionWithOptionButtons(
   from: string,
   selectedCategory: string,

@@ -29,13 +29,14 @@ export class ChatbotService {
     const textBody = text?.body;
     const buttonBody = button_response?.body;
     const persistentMenuBody = persistent_menu_response?.body;
+    let maxPageNum =0
     let botID = process.env.BOT_ID;
     let userData = await this.userService.findUserByMobileNumber(from, botID);
     if (!userData) {
       console.log('Creating new user');
       userData = await this.userService.createUser(from, 'english', botID);
     }
-   
+  
     if (persistentMenuBody) {
       userData.currentQuestionIndex = 0;
       userData.score = 0;
@@ -54,11 +55,24 @@ export class ChatbotService {
         case localisedStrings.category.includes(buttonBody):
           userData.selectedCategory = buttonBody;
           await this.message.sendCategoryMessage(from, buttonBody);
-          await this.message.sendCarousal(from, buttonBody);
-          await this.message.sendStartQuizandExploreButton(
-            from,
-            userData.selectedCategory,
-          );
+          maxPageNum = await this.message.sendCarousal(from, buttonBody,0);
+          userData.currCrouslePage =0
+          userData.maxCrouselPage = maxPageNum
+          if(maxPageNum==userData.currCrouslePage){
+            await this.message.sendStartQuizandExploreButton(
+              from,
+              userData.selectedCategory,
+              false
+            );
+          }
+          else{
+            await this.message.sendStartQuizandExploreButton(
+              from,
+              userData.selectedCategory,
+              true
+            );
+          }
+          await this.userService.saveUser(userData);
           break;
 
         case buttonBody === localisedStrings.startButton: {
@@ -79,12 +93,41 @@ export class ChatbotService {
         case buttonBody ===
           localisedStrings.moreAboutButton(userData.selectedCategory):
           console.log(buttonBody);
-          await this.message.sendCarousal(from, userData.selectedCategory);
-          await this.message.sendStartQuizandExploreButton(
-            from,
-            userData.selectedCategory,
-          );
+          maxPageNum = await this.message.sendCarousal(from, userData.selectedCategory, 0);
+          if(maxPageNum==userData.currCrouslePage){
+            await this.message.sendStartQuizandExploreButton(
+              from,
+              userData.selectedCategory,
+              false
+            );
+          }
+          else{
+            await this.message.sendStartQuizandExploreButton(
+              from,
+              userData.selectedCategory,
+              true
+            );
+          }
           break;
+        case buttonBody === localisedStrings.seeMore:
+          userData.currCrouslePage = userData.currCrouslePage+1
+          maxPageNum = await this.message.sendCarousal(from, userData.selectedCategory, userData.currCrouslePage);
+          if(maxPageNum==userData.currCrouslePage){
+            await this.message.sendStartQuizandExploreButton(
+              from,
+              userData.selectedCategory,
+              false
+            );
+          }
+          else{
+            await this.message.sendStartQuizandExploreButton(
+              from,
+              userData.selectedCategory,
+              true
+            );
+          }
+          await this.userService.saveUser(userData);
+          break
 
         case buttonBody === localisedStrings.plantCategoryButton:
           
