@@ -219,16 +219,6 @@ export function scoreWithButtons(from: string, selectedCategory: string){
       buttons: [
         {
           type: 'solid',
-          body: localisedStrings.moreAboutButton(selectedCategory),
-          reply: localisedStrings.moreAboutButton(selectedCategory),
-        },
-        {
-          type: 'solid',
-          body: localisedStrings.plantCategoryButton,
-          reply: localisedStrings.plantCategoryButton,
-        },
-        {
-          type: 'solid',
           body: localisedStrings.retakeQuizButton,
           reply: localisedStrings.retakeQuizButton,
         },
@@ -236,6 +226,16 @@ export function scoreWithButtons(from: string, selectedCategory: string){
           type: 'solid',
           body: localisedStrings.tryAnotherQuiz,
           reply: localisedStrings.tryAnotherQuiz,
+        },
+        {
+          type: 'solid',
+          body: localisedStrings.moreAboutButton(selectedCategory),
+          reply: localisedStrings.moreAboutButton(selectedCategory),
+        },
+        {
+          type: 'solid',
+          body: localisedStrings.plantCategoryButton,
+          reply: localisedStrings.plantCategoryButton,
         }
 
       ],
