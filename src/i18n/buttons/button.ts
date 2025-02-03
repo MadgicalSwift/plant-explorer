@@ -112,6 +112,7 @@ export function firstQuestionWithOptionButtons(
 
   // Randomly select a quiz set
   const randomSetIndex = Math.floor(Math.random() * quizSets.length);
+  console.log(randomSetIndex)
   const selectedQuizSet = quizSets[randomSetIndex];
 
   // Select the first question (index 0) from the selected quiz set
