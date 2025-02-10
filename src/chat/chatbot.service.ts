@@ -40,6 +40,7 @@ export class ChatbotService {
     if (persistentMenuBody) {
       userData.currentQuestionIndex = 0;
       userData.score = 0;
+      userData.hasSeenMore=false
       await this.message.sendcategory(from);
     }
     if (buttonBody) {
@@ -75,19 +76,44 @@ export class ChatbotService {
           await this.userService.saveUser(userData);
           break;
 
+        
+
         case buttonBody === localisedStrings.startButton: {
-          // Checks if the 'Start Exploring' button was pressed
-          await this.message.sendQuizMessage(from, userData.selectedCategory);
-          const setName = await this.message.sendFirstquestion(
-            from,
-            userData.selectedCategory,
-          );
-          userData.setName = setName;
+          // ✅ Check if 'seeMore' was clicked before starting the quiz
+          if (userData.hasSeenMore) {
+            console.log("User clicked 'See More' before starting the quiz");
+            console.log(userData.hasSeenMore);
+        
+            await this.message.sendQuizMessage(from, userData.selectedCategory);
+            const setName = await this.message.sendFirstquestion(from, userData.selectedCategory, true);
+            userData.setName = setName;
+        
+          } else {
+            await this.message.sendQuizMessage(from, userData.selectedCategory);
+            const setName = await this.message.sendFirstquestion(from, userData.selectedCategory, false);
+            console.log(userData.hasSeenMore, "vjgjgjhgj");
+        
+            userData.setName = setName;
+          }
+        
+          // ✅ Reset the flag after starting the quiz
+          //userData.hasSeenMore = false;
+        
+          try {
+            await this.userService.saveUser(userData);
+          } catch (error) {
+            console.error("Error saving user data:", error);
+          }
+        
           break;
         }
+        
+        
+
         case buttonBody === localisedStrings.exploreButton:
           userData.currentQuestionIndex = 0;
           userData.score = 0;
+          userData.hasSeenMore=false;
           await this.message.sendcategory(from);
           break;
         case buttonBody ===
@@ -109,28 +135,28 @@ export class ChatbotService {
             );
           }
           break;
-        case buttonBody === localisedStrings.seeMore:
-          userData.currCrouslePage = userData.currCrouslePage+1
-          maxPageNum = await this.message.sendCarousal(from, userData.selectedCategory, userData.currCrouslePage);
-          if(maxPageNum==userData.currCrouslePage){
-            await this.message.sendStartQuizandExploreButton(
-              from,
-              userData.selectedCategory,
-              false
-            );
-          }
-          else{
-            await this.message.sendStartQuizandExploreButton(
-              from,
-              userData.selectedCategory,
-              true
-            );
-          }
-          await this.userService.saveUser(userData);
-          break
+        
+          
+            case buttonBody === localisedStrings.seeMore(userData.selectedCategory):
+              userData.currCrouslePage = userData.currCrouslePage + 1;
+              maxPageNum = await this.message.sendCarousal(from, userData.selectedCategory, userData.currCrouslePage);
+              //console.log(userData.hasSeenMore)
+              //console.log(userData)
+              // ✅ Mark that the user has seen more
+              userData.hasSeenMore = true;
+              console.log(userData.hasSeenMore)
+              if (maxPageNum == userData.currCrouslePage) {
+                await this.message.sendStartQuizandExploreButton(from, userData.selectedCategory, false);
+              } else {
+                await this.message.sendStartQuizandExploreButton(from, userData.selectedCategory, true);
+              }
+              
+              await this.userService.saveUser(userData);
+            break;
+
 
         case buttonBody === localisedStrings.plantCategoryButton:
-          
+          userData.hasSeenMore=false
           await this.message.sendcategory(from);
           break;
         case buttonBody === localisedStrings.retakeQuizButton:
@@ -146,12 +172,32 @@ export class ChatbotService {
         
           case buttonBody === localisedStrings.tryAnotherQuiz:
          
-          await this.message.sendQuizMessage(from, userData.selectedCategory);
-          const setName = await this.message.sendFirstquestion(
-            from,
-            userData.selectedCategory,
-          );
+          //await this.message.sendQuizMessage(from, userData.selectedCategory);
+          // const setName = await this.message.sendFirstquestion(
+          //   from,
+          //   userData.selectedCategory,
+          //   length
+          // );
+          // userData.setName = setName;
+
+
+          if (userData.hasSeenMore) {
+            //console.log("User clicked 'See More' before starting the quiz");
+            await this.message.sendQuizMessage(from, userData.selectedCategory);
+          const setName = await this.message.sendFirstquestion(from, userData.selectedCategory,true);
           userData.setName = setName;
+          //console.log(setName,"hhhhhhh1111")
+         //console.log(userData)
+          }else{
+            await this.message.sendQuizMessage(from, userData.selectedCategory);
+          const setName = await this.message.sendFirstquestion(from, userData.selectedCategory,false);
+         // console.log(setName,"hhhhhhh")
+          userData.setName = setName;
+          //console.log(userData)
+
+          }
+
+
           break;
          
         default: {

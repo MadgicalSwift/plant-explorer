@@ -1,7 +1,8 @@
 import { localisedStrings } from '../en/localised-strings';
 import data from 'src/datasource/data.json';
 import _ from 'lodash';
-
+import { Body } from '@nestjs/common';
+import ChatbotService from 'src/chat/chatbot.service';
 export function categoryButton(from: string) {
   const buttons = localisedStrings.category.map((category: string) => ({
     type: 'solid',
@@ -67,13 +68,14 @@ export function QuizWithMoreButton(
         type: 'text',
         text: {
           body: localisedStrings.afterCarousalMessage(selectedCategory),
+
         },
       },
       buttons: [
         {
           type: 'solid',
-          body: localisedStrings.seeMore,
-          reply: localisedStrings.seeMore,
+          body: localisedStrings.seeMore(selectedCategory),
+          reply: localisedStrings.seeMore(selectedCategory),
         },
         {
           type: 'solid',
@@ -94,7 +96,7 @@ export function QuizWithMoreButton(
 export function firstQuestionWithOptionButtons(
   from: string,
   selectedCategory: string,
-) {
+isClick:boolean) {
   // Check if the selected category exists and has a quiz_sets field
   if (!data[selectedCategory]) {
     console.log(`Category ${selectedCategory} not found.`);
@@ -110,10 +112,25 @@ export function firstQuestionWithOptionButtons(
   // Get the quiz sets from the selected category
   const quizSets = data[selectedCategory].quiz_sets;
 
-  // Randomly select a quiz set
-  const randomSetIndex = Math.floor(Math.random() * quizSets.length);
-  console.log(randomSetIndex)
-  const selectedQuizSet = quizSets[randomSetIndex];
+  
+  let randomSetIndex = 0
+   console.log(randomSetIndex)
+  let selectedQuizSet = quizSets[0];
+if(isClick){
+  randomSetIndex = Math.floor(Math.random() *quizSets.length);
+   console.log(randomSetIndex,"kkkk")
+   console.log(isClick,"if")
+   //console.log(quizSets.length,"llllll")
+  selectedQuizSet = quizSets[randomSetIndex];
+
+}else{
+  randomSetIndex = Math.floor(Math.random() *5);
+  console.log(randomSetIndex,"iiiii")
+  console.log(isClick,"else")
+   //console.log(quizSets.length,"33333")
+  
+ selectedQuizSet = quizSets[randomSetIndex];
+}
 
   // Select the first question (index 0) from the selected quiz set
   const firstQuestion = selectedQuizSet.questions[0];

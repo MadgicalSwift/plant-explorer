@@ -32,7 +32,7 @@ export abstract class MessageService {
   abstract sendCarousal(from: string, selectedCategory: string,currentPage: number);
   abstract sendStartQuizandExploreButton(from: string, selectedCategory: string, isSeeMore: boolean);
   abstract sendQuizMessage(from: string, selectedCategory: string);
-  abstract sendFirstquestion(from: string, selectedCategory: string);
+  abstract sendFirstquestion(from: string, selectedCategory: string, isClick:boolean);
   abstract sendNextQuestion(from: string, selectedCategory: string, setName: string, currentQuestionIndex: number);
   abstract checkAnswer(from: string, selectedCategory: string, setName: string, currentQuestionIndex: number, userAnswer: string);
   abstract sendScoreCard(from: string, score: number);

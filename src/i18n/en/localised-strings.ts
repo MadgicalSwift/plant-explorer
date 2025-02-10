@@ -18,7 +18,8 @@ export const localisedStrings = {
   
   afterCarousalMessage: (selectedCategory: string) => `Want to test your knowledge about ${selectedCategory}?`,
   startButton: 'Start Quiz',
-  seeMore:"See More",
+ // seeMore:"see More",
+  seeMore:(selectedCategory: string) => `See More ${selectedCategory}`,
   exploreButton: 'Change Plant Category',
   quizMessage: (selectedCategory: string) =>`🎉 Ready to start? 🌸 Let’s take a quiz about ${selectedCategory}. You’ll get 1 point for every right answer. Try your best and good luck! 🍀`,  
   correctAnser:'Great job! Your answer is completely correct 🥳',

@@ -30,7 +30,7 @@ export class UserService {
   //   }
   // }
 
-  async createUser(mobileNumber: string, language: string, botID: string): Promise<User | any> {
+ /* async createUser(mobileNumber: string, language: string, botID: string): Promise<User | any> {
     try {
       const existingUser = await this.findUserByMobileNumber(
         mobileNumber,
@@ -66,7 +66,50 @@ export class UserService {
     } catch (error) {
       console.error('Error in createUser:', error);
     }
-  }
+  }*/
+
+
+
+
+    async createUser(mobileNumber: string, language: string, botID: string): Promise<User | any> {
+      try {
+        const existingUser = await this.findUserByMobileNumber(mobileNumber, botID);
+        if (existingUser) {
+          const updateUser = {
+            TableName: USERS_TABLE,
+            Item: existingUser,
+          };
+          await dynamoDBClient().put(updateUser).promise();
+          return existingUser;
+        } else {
+          const newUser = {
+            TableName: USERS_TABLE,
+            Item: {
+              id: uuidv4(),
+              mobileNumber: mobileNumber,
+              language: language,
+              Botid: botID,
+              selectedCategory: null,
+              setName: null,
+              currentQuestionIndex: 0,
+              score: 0,
+              currCrouslePage: 0,
+              maxCrouselPage: 0,
+              hasSeenMore: false, // ✅ Initialize it as false
+            },
+          };
+          await dynamoDBClient().put(newUser).promise();
+          return newUser;
+        }
+      } catch (error) {
+        console.error('Error in createUser:', error);
+      }
+    }
+    
+
+
+
+
   async findUserByMobileNumber(
     mobileNumber: string,
     Botid: string,

@@ -164,14 +164,34 @@ export class SwiftchatMessageService extends MessageService {
     await this.sendMessage(this.baseUrl, requestData, this.apiKey);
   }
 
-  async sendFirstquestion(from: string, selectedCategory: string) {
+  
+
+//============
+async sendFirstquestion(from: string, selectedCategory: string, isClick:boolean) {
+  if(isClick){
     const { requestData, setName } = firstQuestionWithOptionButtons(
       from,
       selectedCategory,
+      true
     );
     await this.sendMessage(this.baseUrl, requestData, this.apiKey);
     return setName;
+  
+  }else{
+    const { requestData, setName } = firstQuestionWithOptionButtons(
+      from,
+      selectedCategory,
+      false
+    );
+    await this.sendMessage(this.baseUrl, requestData, this.apiKey);
+    return setName;
+  
   }
+  }
+
+
+
+
 
   async checkAnswer(
     from: string,
