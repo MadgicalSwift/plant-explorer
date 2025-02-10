@@ -118,15 +118,11 @@ isClick:boolean) {
   let selectedQuizSet = quizSets[0];
 if(isClick){
   randomSetIndex = Math.floor(Math.random() *quizSets.length);
-   console.log(randomSetIndex,"kkkk")
-   console.log(isClick,"if")
    //console.log(quizSets.length,"llllll")
   selectedQuizSet = quizSets[randomSetIndex];
 
 }else{
-  randomSetIndex = Math.floor(Math.random() *5);
-  console.log(randomSetIndex,"iiiii")
-  console.log(isClick,"else")
+  randomSetIndex = Math.floor(Math.random() *10);
    //console.log(quizSets.length,"33333")
   
  selectedQuizSet = quizSets[randomSetIndex];
