@@ -1,14 +1,20 @@
-#  Chatbot NestJS Boilerplate
+# Project Title: 
+Plant Explorer Bot 🌱
 
-In this comprehensive guide, we introduce you to our Chatbot Starter Kit, a resource designed to empower developers in building robust chatbot applications. Whether you are just starting your journey in chatbot development or are an experienced developer seeking an efficient solution, this document is your go-to resource for mastering the use of our starter kit.
+# Project Description:
+The Plant Explorer Bot is an interactive bot designed to help users learn about different flowering plants through exploration and quizzes. It provides information on various plant species along with images, and users can test their plant knowledge with fun, educational quizzes.
 
+# Key Features:
+Plant Information Display: Displays plant names and images for easy identification and learning.
+Quiz Functionality: Interactive quizzes to test knowledge about plant characteristics, uses, and symbolism.
+Explanations for Answers: Detailed explanations for quiz answers to enhance learning.
 
 # Prerequisites
 Before you begin, ensure you have met the following requirements:
 
 * Node.js and npm installed
 * Nest.js CLI installed (npm install -g @nestjs/cli)
-* MySQL database accessible
+* DynamoDb database accessible
 
 ## Getting Started
 ### Installation
@@ -18,15 +24,15 @@ Click the "Fork" button in the upper right corner of the repository page. This w
 
 * Clone this repository:
 ```
-https://github.com/madgicaltechdom/chatbot-nestjs-boilerplate.git
+https://github.com/MadgicalSwift/plant-explorer.git
 ```
 * Navigate to the Project Directory:
 ```
-cd chatbot-nestjs-boilerplate
+cd plant-explorer
 ```
 * Install Project Dependencies:
 ```bash
-$ npm install
+$ npm install or npm i
 ```
 
 ## Running the app
@@ -58,19 +64,29 @@ $ npm run test:cov
 # Add the following environment variables:
 
 ```bash
+USERS_TABLE= testing-table-1
+REGION= ap-south-1
+ACCESS_KEY_ID= ACCESS_KEY_ID
+SECRET_ACCESS_KEY=SECRET_ACCESS_KEY
 API_URL = API_URL
 BOT_ID = BOT_ID
 API_KEY = API_KEY
-DATA_BASE=DATA_BASE
-DB_HOST=DB_HOST
-DB_USER=DB_USER
-DB_PASSWORD=DB_PASSWORD
 ```
 # API Endpoints
 ```
 POST api/message: Endpoint for handling user requests. 
 Get/api/status: Endpoint for checking the status of  api
 ```
+
+# Make their local server to public server
+```
+Install and run ngrok using command "ngrok http 3000" Copy forwarding Url
+insatall and run postman and past url in the body 
+and send PUt request Url https://v1-api.swiftchat.ai/api/bots/Bot_Id/webhook-url
+```
+
+
+
 # folder structure
 
 ```bash
