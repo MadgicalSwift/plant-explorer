@@ -96,9 +96,6 @@ export class ChatbotService {
             userData.setName = setName;
           }
         
-          // ✅ Reset the flag after starting the quiz
-          //userData.hasSeenMore = false;
-        
           try {
             await this.userService.saveUser(userData);
           } catch (error) {
@@ -172,28 +169,18 @@ export class ChatbotService {
         
           case buttonBody === localisedStrings.tryAnotherQuiz:
          
-          //await this.message.sendQuizMessage(from, userData.selectedCategory);
-          // const setName = await this.message.sendFirstquestion(
-          //   from,
-          //   userData.selectedCategory,
-          //   length
-          // );
-          // userData.setName = setName;
-
-
           if (userData.hasSeenMore) {
-            //console.log("User clicked 'See More' before starting the quiz");
+            
             await this.message.sendQuizMessage(from, userData.selectedCategory);
           const setName = await this.message.sendFirstquestion(from, userData.selectedCategory,true);
           userData.setName = setName;
-          //console.log(setName,"hhhhhhh1111")
-         //console.log(userData)
+          
           }else{
             await this.message.sendQuizMessage(from, userData.selectedCategory);
           const setName = await this.message.sendFirstquestion(from, userData.selectedCategory,false);
-         // console.log(setName,"hhhhhhh")
+         
           userData.setName = setName;
-          //console.log(userData)
+         
 
           }
 
