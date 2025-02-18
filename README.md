@@ -4,10 +4,14 @@ Plant Explorer Bot 🌱
 # Project Description:
 The Plant Explorer Bot is an interactive bot designed to help users learn about different flowering plants through exploration and quizzes. It provides information on various plant species along with images, and users can test their plant knowledge with fun, educational quizzes.
 
+
+
 # Key Features:
-Plant Information Display: Displays plant names and images for easy identification and learning.
-Quiz Functionality: Interactive quizzes to test knowledge about plant characteristics, uses, and symbolism.
-Explanations for Answers: Detailed explanations for quiz answers to enhance learning.
+ Plant Information Display: Displays plant names and images for easy identification and learning.
+ Quiz Functionality: Interactive quizzes to test knowledge about plant characteristics, uses, and symbolism.
+ Explanations for Answers: Detailed explanations for quiz answers to enhance learning.
+
+
 
 # Prerequisites
 Before you begin, ensure you have met the following requirements:
@@ -81,7 +85,7 @@ Get/api/status: Endpoint for checking the status of  api
 # Make their local server to public server
 ```
 Install and run ngrok using command "ngrok http 3000" Copy forwarding Url
-insatall and run postman and past url in the body 
+install and run postman and past url in the body 
 and send PUt request Url https://v1-api.swiftchat.ai/api/bots/Bot_Id/webhook-url
 ```
 
