@@ -5,12 +5,10 @@ Plant Explorer Bot 🌱
 The Plant Explorer Bot is an interactive bot designed to help users learn about different flowering plants through exploration and quizzes. It provides information on various plant species along with images, and users can test their plant knowledge with fun, educational quizzes.
 
 
-
 # Key Features:
  Plant Information Display: Displays plant names and images for easy identification and learning.
  Quiz Functionality: Interactive quizzes to test knowledge about plant characteristics, uses, and symbolism.
  Explanations for Answers: Detailed explanations for quiz answers to enhance learning.
-
 
 
 # Prerequisites
@@ -68,8 +66,8 @@ $ npm run test:cov
 # Add the following environment variables:
 
 ```bash
-USERS_TABLE= testing-table-1
-REGION= ap-south-1
+USERS_TABLE= table_name
+REGION= region
 ACCESS_KEY_ID= ACCESS_KEY_ID
 SECRET_ACCESS_KEY=SECRET_ACCESS_KEY
 API_URL = API_URL
