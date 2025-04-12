@@ -74,14 +74,12 @@ export class SwiftchatMessageService extends MessageService {
 
     async sendCarousal(from: string, selectedCategory: string, currentPage: number) {
       if (!data[selectedCategory]?.plants) {
-        console.log(
-          `Category ${selectedCategory} not found or contains no plants.`
-        );
+       
         return;
       }
       
       const plants = data[selectedCategory].plants;
-  const pageSize = 5; // Number of items per page
+  const pageSize = 5; 
   const totalItems = plants.length;
   const maxPage = Math.ceil(totalItems / pageSize) - 1;
   const startIndex = currentPage * pageSize;
@@ -89,7 +87,7 @@ export class SwiftchatMessageService extends MessageService {
   const paginatedPlants = plants.slice(startIndex, Math.min(startIndex + pageSize, totalItems));
   
       if (paginatedPlants.length === 0) {
-        console.log(`No more plants available for page ${currentPage}.`);
+       
         return { maxPage };
       }
     
@@ -135,7 +133,7 @@ export class SwiftchatMessageService extends MessageService {
           requestData,
           this.apiKey
         );
-        console.log(maxPage)
+       
         return maxPage;
       } catch (error) {
         console.error('Error sending message:', error);
@@ -166,7 +164,7 @@ export class SwiftchatMessageService extends MessageService {
 
   
 
-//============
+
 async sendFirstquestion(from: string, selectedCategory: string, isClick:boolean) {
   if(isClick){
     const { requestData, setName } = firstQuestionWithOptionButtons(
@@ -202,37 +200,35 @@ async sendFirstquestion(from: string, selectedCategory: string, isClick:boolean)
   ) {
     const quizSets = data[selectedCategory]?.quiz_sets;
     if (!quizSets) {
-      console.log(
-        `Category ${selectedCategory} not found or does not have quiz sets.`,
-      );
+      
       return;
     }
 
-    // Find the quiz set that matches the setName
+   
     const selectedQuizSet = quizSets.find((set) => set.set_name === setName);
     if (!selectedQuizSet) {
-      console.log(`Quiz Set ${setName} not found.`);
+     
       return;
     }
 
-    // Ensure the currentQuestionIndex is within the bounds of the questions array
+    
     if (
       currentQuestionIndex < 0 ||
       currentQuestionIndex >= selectedQuizSet.questions.length
     ) {
-      console.log('Invalid question index.');
+     
       return;
     }
 
-    // Get the current question
+   
     const currentQuestion = selectedQuizSet.questions[currentQuestionIndex];
-    // Retrieve the explanation
+    
     const explanation = currentQuestion.explanation;
-    // Check if explanation is missing
+   
     if (!explanation) {
-      console.log('Explanation not found');
+    
     }
-    // Check if the user's answer matches the correct answer
+   
     if (userAnswer === currentQuestion.answer) {
       const requestData = this.prepareRequestData(
         from,
@@ -284,7 +280,7 @@ async sendFirstquestion(from: string, selectedCategory: string, isClick:boolean)
     let performance = '';
     let animation = '';
     let text2 = '';
-    // Assign badge and performance based on score
+   
     if (score === 5) {
       badge = 'Gold🥇';
       performance = 'high';
