@@ -16,7 +16,7 @@ export function categoryButton(from: string) {
       body: {
         type: 'text',
         text: {
-          body: localisedStrings.categorymessage, // Customize this text if needed
+          body: localisedStrings.categorymessage, 
         },
       },
       buttons: buttons,
@@ -97,49 +97,47 @@ export function firstQuestionWithOptionButtons(
   from: string,
   selectedCategory: string,
 isClick:boolean) {
-  // Check if the selected category exists and has a quiz_sets field
+
   if (!data[selectedCategory]) {
-    console.log(`Category ${selectedCategory} not found.`);
+  
     return;
   }
   if (
     !data[selectedCategory].quiz_sets ||
     data[selectedCategory].quiz_sets.length === 0
   ) {
-    console.log(`No quiz sets found for category ${selectedCategory}.`);
+   
     return;
   }
-  // Get the quiz sets from the selected category
+
   const quizSets = data[selectedCategory].quiz_sets;
 
   
   let randomSetIndex = 0
-   console.log(randomSetIndex)
+
   let selectedQuizSet = quizSets[0];
 if(isClick){
   randomSetIndex = Math.floor(Math.random() *quizSets.length);
-   //console.log(quizSets.length,"llllll")
+  
   selectedQuizSet = quizSets[randomSetIndex];
 
 }else{
   randomSetIndex = Math.floor(Math.random() *10);
-   //console.log(quizSets.length,"33333")
+ 
   
  selectedQuizSet = quizSets[randomSetIndex];
 }
 
-  // Select the first question (index 0) from the selected quiz set
+  
   const firstQuestion = selectedQuizSet.questions[0];
 
-  // Check if the first question has options
+ 
   if (!firstQuestion.options || firstQuestion.options.length === 0) {
-    console.log(
-      `No options available for the question: "${firstQuestion.question}".`,
-    );
+    
     return;
   }
   const shuffledOptions = _.shuffle(firstQuestion.options);
-  // Send the first question to the user
+ 
   const requestData = {
     to: from,
     type: 'button',
@@ -147,7 +145,7 @@ if(isClick){
       body: {
         type: 'text',
         text: {
-          body: `Question 1.\n${firstQuestion.question}`, // Displaying the question text
+          body: `*Question 1.* \n${firstQuestion.question}`, 
         },
       },
       buttons: shuffledOptions.map((option) => ({
@@ -169,31 +167,28 @@ export function nextQuestionWithOptionButtons(
 ) {
   const quizSets = data[selectedCategory]?.quiz_sets;
   if (!quizSets) {
-    console.log(
-      `Category ${selectedCategory} not found or does not have quiz sets.`,
-    );
+    
     return;
   }
-  // Find the quiz set that matches the setName
+ 
   const selectedQuizSet = quizSets.find((set) => set.set_name === setName);
   if (!selectedQuizSet) {
-    console.log(`Quiz Set ${setName} not found.`);
+   
     return;
   }
-  // Ensure the current question index is within the bounds of the questions array
+  
   if (currentQuestionIndex >= selectedQuizSet.questions.length) {
-    console.log('No more questions available in this quiz set.');
+    
     return;
   }
 
-  // Get the current question based on the provided index
+  
   const currentQuestion = selectedQuizSet.questions[currentQuestionIndex];
 
-  // Check if the current question has options
+ 
   if (!currentQuestion.options || currentQuestion.options.length === 0) {
-    console.log(
-      `No options available for the question: "${currentQuestion.question}".`,
-    );
+    
+    
     return;
   }
   currentQuestionIndex += 1;
@@ -206,7 +201,7 @@ export function nextQuestionWithOptionButtons(
       body: {
         type: 'text',
         text: {
-          body: `Question ${currentQuestionIndex}.\n${currentQuestion.question}`, // Displaying the current question text
+          body: `*Question ${currentQuestionIndex}.* \n${currentQuestion.question}`, 
         },
       },
       buttons: shuffledOptions.map((option) => ({

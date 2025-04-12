@@ -33,7 +33,7 @@ export class ChatbotService {
     let botID = process.env.BOT_ID;
     let userData = await this.userService.findUserByMobileNumber(from, botID);
     if (!userData) {
-      console.log('Creating new user');
+      
       userData = await this.userService.createUser(from, 'english', botID);
     }
   
@@ -44,7 +44,7 @@ export class ChatbotService {
       await this.message.sendcategory(from);
     }
     if (buttonBody) {
-      // Mixpanel tracking data
+      
       const trackingData = {
         distinct_id: from,
         button: buttonBody,
@@ -79,10 +79,9 @@ export class ChatbotService {
         
 
         case buttonBody === localisedStrings.startButton: {
-          // ✅ Check if 'seeMore' was clicked before starting the quiz
+         
           if (userData.hasSeenMore) {
-            console.log("User clicked 'See More' before starting the quiz");
-            console.log(userData.hasSeenMore);
+           
         
             await this.message.sendQuizMessage(from, userData.selectedCategory);
             const setName = await this.message.sendFirstquestion(from, userData.selectedCategory, true);
@@ -91,10 +90,12 @@ export class ChatbotService {
           } else {
             await this.message.sendQuizMessage(from, userData.selectedCategory);
             const setName = await this.message.sendFirstquestion(from, userData.selectedCategory, false);
-            console.log(userData.hasSeenMore, "vjgjgjhgj");
+            
         
             userData.setName = setName;
           }
+        
+         
         
           try {
             await this.userService.saveUser(userData);
@@ -115,7 +116,7 @@ export class ChatbotService {
           break;
         case buttonBody ===
           localisedStrings.moreAboutButton(userData.selectedCategory):
-          console.log(buttonBody);
+         
           maxPageNum = await this.message.sendCarousal(from, userData.selectedCategory, 0);
           if(maxPageNum==userData.currCrouslePage){
             await this.message.sendStartQuizandExploreButton(
@@ -137,11 +138,9 @@ export class ChatbotService {
             case buttonBody === localisedStrings.seeMore(userData.selectedCategory):
               userData.currCrouslePage = userData.currCrouslePage + 1;
               maxPageNum = await this.message.sendCarousal(from, userData.selectedCategory, userData.currCrouslePage);
-              //console.log(userData.hasSeenMore)
-              //console.log(userData)
-              // ✅ Mark that the user has seen more
+             
               userData.hasSeenMore = true;
-              console.log(userData.hasSeenMore)
+          
               if (maxPageNum == userData.currCrouslePage) {
                 await this.message.sendStartQuizandExploreButton(from, userData.selectedCategory, false);
               } else {
@@ -169,18 +168,21 @@ export class ChatbotService {
         
           case buttonBody === localisedStrings.tryAnotherQuiz:
          
+        
+
+
           if (userData.hasSeenMore) {
             
             await this.message.sendQuizMessage(from, userData.selectedCategory);
           const setName = await this.message.sendFirstquestion(from, userData.selectedCategory,true);
           userData.setName = setName;
-          
+         
           }else{
             await this.message.sendQuizMessage(from, userData.selectedCategory);
           const setName = await this.message.sendFirstquestion(from, userData.selectedCategory,false);
-         
+       
           userData.setName = setName;
-         
+        
 
           }
 
